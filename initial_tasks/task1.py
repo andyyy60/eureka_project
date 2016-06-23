@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 import os, exifread
-#TODO: ADD LOOP THAT RENAMES FILES TEMPORARY TO AVOID CONFLICTS
+
 
 #finds images in "sample_images" folder
 image_dir = os.getcwd()+"/sample_images/"
