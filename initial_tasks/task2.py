@@ -1,6 +1,7 @@
 #!/usr/bin/python2.7
 #todo: edge cases,empty lists
 #todo: cleanup with fresh mind
+#TODO: ADD LOOP THAT RENAMES FILES TEMPORARY TO AVOID CONFLICTS
 
 import os, exifread, time, operator
 
@@ -12,19 +13,28 @@ def exif_info2time(ts):
 #finds images in "sample_images" folder
 image_dir = os.getcwd()+"/sample_images/"
 
+
 timestamp = {}
+filename_stamp = {}
 for filename in os.listdir(image_dir):
     f = open(image_dir + filename, 'rb')
     tags = exifread.process_file(f)
     for tag in tags.keys():
         if tag not in ('JPEGThumbnail', 'TIFFThumbnail'):  # these are not printable
-            dt_value = '%s' % tags['Image DateTime']
-            timestamp[str(image_dir+filename)] = exif_info2time(dt_value)
+            dt_sec = '%s' % tags['Image DateTime']
+            timestamp[str(filename)] = exif_info2time(dt_sec)
+            dt_value = str(tags['Image DateTime']).split()
+            filename_stamp[str(filename)] = dt_value
+
+
+
+
+
+
 
 sorted_timestamps = sorted(timestamp.items(), key=operator.itemgetter(1)) # create sorted list of (filename, time) tuples
 
-for n in range(0,len(sorted_timestamps)):
-    print (sorted_timestamps[0][1]-sorted_timestamps[n][1])
+
 
 def assign_clusters(timestamps):
     edge_indexes = []
@@ -34,7 +44,6 @@ def assign_clusters(timestamps):
             edge_indexes.append(n)
             current = n
     clusters = [[] for i in range(len(edge_indexes)+1)]
-    print((clusters))
     current_index = 0
     current_cluster = 0
     for elements in range(len(edge_indexes)):
@@ -45,12 +54,18 @@ def assign_clusters(timestamps):
 
     for i in range(current_index, len(sorted_timestamps)):
         clusters[current_cluster].append(sorted_timestamps[i][1])
+    return clusters
 
 
-    for item in range(len(clusters)):
-        for j in (clusters[item]):
-            print "Cluster {0}: {1}".format(item, j)
+print assign_clusters(timestamp)
+def cluster_id(time_in_seconds, cluster):
+    #returns sequence id of cluster given filename
+    for sequence in range(len(cluster)):
+        for time in cluster[sequence]:
+            if time_in_seconds == time:
+                return sequence
 
 
-assign_clusters(timestamp)
 
+for item in sorted_timestamps:
+    os.rename(str(image_dir+item[0]),str("{0}_{1}_{2}_{3}.JPG".format(image_dir+item[0][:-4], str(filename_stamp[item[0]][0]).replace(':','-'), str(filename_stamp[item[0]][1]), str(cluster_id(item[1], assign_clusters(timestamp))))))

@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 import os, exifread
-
+#TODO: ADD LOOP THAT RENAMES FILES TEMPORARY TO AVOID CONFLICTS
 
 #finds images in "sample_images" folder
 image_dir = os.getcwd()+"/sample_images/"
@@ -19,4 +19,10 @@ for filename in os.listdir(image_dir):
 
 
 for item in timestamp:
-    os.rename(str(item),str("{0}, {1} {2}".format(item, str(timestamp[item][0]).replace(':','-'), timestamp[item][1])))
+    os.rename(str(item),str("{0}_{1}_{2}".format(item[:-4], str(timestamp[item][0]).replace(':','-'), timestamp[item][1]))+".JPG")
+
+# #test loop
+# count =1
+# for filename in os.listdir((image_dir)):
+#     os.rename(image_dir+filename, image_dir+str(count)+".JPG")
+#     count+=1
