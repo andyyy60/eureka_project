@@ -1,5 +1,4 @@
 #!/usr/bin/python2.7
-#todo: edge cases,empty lists
 #todo: cleanup with fresh mind
 #TODO: ADD LOOP THAT RENAMES FILES TEMPORARY TO AVOID CONFLICTS
 
