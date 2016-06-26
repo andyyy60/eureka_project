@@ -25,7 +25,7 @@ def convert(fname, size, blur=True):
 
 
 ######################################
-def main(type_int, image):
+def main(type_int, image): ##Now has function arguments instead, for testing purposes
     '''
     '''
 
