@@ -2,10 +2,10 @@
 import cv2, imutils
 import numpy as np
 
-def recognize(path):
+def recognize(images_path, training_path):
     #######   training part    ###############
-    samples = np.loadtxt('generalsamples.data', np.float32)
-    responses = np.loadtxt('generalresponses.data', np.float32)
+    samples = np.loadtxt(training_path+'generalsamples.data', np.float32)
+    responses = np.loadtxt(training_path+'generalresponses.data', np.float32)
     responses = responses.reshape((responses.size, 1))
 
     model = cv2.ml.KNearest_create()
@@ -13,7 +13,7 @@ def recognize(path):
 
     ############################# testing part  #########################
 
-    image = cv2.imread(path)
+    image = cv2.imread(images_path)
     out = np.zeros(image.shape, np.uint8)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
