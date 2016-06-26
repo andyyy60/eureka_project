@@ -5,6 +5,10 @@ import numpy as np
 import cv2
 
 def train(training_image):
+    '''trains a kNN model with human input.
+    USE: give a training image as an input (look: data folder for examples)
+    manually enter the numbers in the boxes to train the model
+    if everything goes well, "training complete" messeage should appear'''
     image = cv2.imread(training_image)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
@@ -40,7 +44,7 @@ def train(training_image):
         roismall = cv2.resize(roi, (10, 10))
         cv2.imshow('norm', image)
         key = cv2.waitKey(0)
-        key = 48+(key-1114032)
+        key = 48+(key-1114032) #weird encoding error fix
         print(chr(key))
         if key == chr(27).encode():  # (escape to quit)
             sys.exit()
@@ -60,4 +64,3 @@ def train(training_image):
     np.savetxt('generalsamples.data', samples)
     np.savetxt('generalresponses.data', responses)
 
-train('/home/andy/PycharmProjects/ocr/no_space_stitch.jpg')
