@@ -1,7 +1,5 @@
 # Temperature recognition using Optical Character Recognition with k-Nearest-Neighbor
 #to be completed - documentation coming soon
+<p>Model working with positive, two digit numbers<p>
 TODO:
-<p>
-Create two different training data sets (left and right digits)</p>
-<p>Train the model respectively</p>
-<p>If mismatches still occur, train model further with correct data</p>
+<p>extend funcitonality to negative and 3 digit numbers</p>
