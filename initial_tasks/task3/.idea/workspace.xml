@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb67d08e-03f8-412a-af2c-a6772da05ec2" name="Default" comment="">
+    <list default="true" id="bb67d08e-03f8-412a-af2c-a6772da05ec2" name="Default" comment="added case that recognizes &quot;° F&quot; as a character. Treated as value 99">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crop_and_recognize.py" afterPath="$PROJECT_DIR$/crop_and_recognize.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocr_contour.py" afterPath="$PROJECT_DIR$/ocr_contour.py" />
     </list>
     <ignored path="task3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,12 +32,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="930">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding>
+                <element signature="e#4219#4259#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,11 +47,9 @@
       <file leaf-file-name="training_contours.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/training_contours.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <element signature="e#2#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="570">
+              <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ocr_contour.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ocr_contour.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ocr_contour.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state relative-caret-position="750">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
               </folding>
@@ -124,8 +126,8 @@
         <option value="$PROJECT_DIR$/crop.py" />
         <option value="$PROJECT_DIR$/char test.py" />
         <option value="$PROJECT_DIR$/training_contours.py" />
-        <option value="$PROJECT_DIR$/ocr_contour.py" />
         <option value="$PROJECT_DIR$/crop_and_recognize.py" />
+        <option value="$PROJECT_DIR$/ocr_contour.py" />
       </list>
     </option>
   </component>
@@ -676,14 +678,21 @@
       <option name="project" value="LOCAL" />
       <updated>1467011645034</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added case that recognizes &quot;° F&quot; as a character. Treated as value 99">
+      <created>1467068800522</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1467068800522</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26147044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26147044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.50193477" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -726,7 +735,8 @@
     <MESSAGE value="run() now uses a list of appended recognized (by using ocr_contour.recognize()) digits to evaluate temperatures" />
     <MESSAGE value="now returns in format &quot;temp is: [temperature]&quot; for every image in directory" />
     <MESSAGE value="added function for recognizing a single image" />
-    <option name="LAST_COMMIT_MESSAGE" value="added function for recognizing a single image" />
+    <MESSAGE value="added case that recognizes &quot;° F&quot; as a character. Treated as value 99" />
+    <option name="LAST_COMMIT_MESSAGE" value="added case that recognizes &quot;° F&quot; as a character. Treated as value 99" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -737,7 +747,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4219#4259#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -745,9 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +811,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4219#4259#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,9 +821,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +875,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#4219#4259#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -873,9 +885,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -965,26 +975,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocr_contour.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training_contours.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stitch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1003,11 +993,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/training_contours.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vertical_stitch.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="930">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <element signature="e#4219#4259#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocr_contour.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

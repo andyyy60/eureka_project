@@ -31,21 +31,20 @@ def recognize(images_path, training_path):
         cY = int(M["m01"] / M["m00"])
 
         # draw the contour and center of the shape on the image
-        cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
         cv2.circle(image, (cX, cY), 7, (255, 255, 255), -1)
-        cv2.putText(image, "center", (cX - 20, cY - 20),
-            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
         [x, y, w, h] = cv2.boundingRect(c)
-        cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
-        roi = thresh[y:y + h, x:x + w]
-        roismall = cv2.resize(roi, (10, 10))
-        roismall = roismall.reshape((1, 100))
-        roismall = np.float32(roismall)
-        retval, results, neigh_resp, dists = model.findNearest(roismall, k=1)
-        string = str(int((results[0][0])))
-        cv2.putText(out, string, (x, y + h), 0, 1, (0, 255, 0))
 
-        content.append(string)
-
+        if cv2.contourArea(c)>200: #if the recognized figure is big enough
+            cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            roi = thresh[y:y + h, x:x + w]
+            roismall = cv2.resize(roi, (10, 10))
+            roismall = roismall.reshape((1, 100))
+            roismall = np.float32(roismall)
+            retval, results, neigh_resp, dists = model.findNearest(roismall, k=1)
+            if str(int((results[0][0]))) != '99': #ignore F symbol
+                string = str(int((results[0][0])))
+                cv2.putText(out, string, (x, y + h), 0, 1, (0, 255, 0))
+                content.append(string)
     content.reverse()
     return content
+
