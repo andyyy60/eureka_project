@@ -43,10 +43,11 @@ for c in cnts:
     print(chr(key))
     if key == chr(27).encode():  # (escape to quit)
         sys.exit()
-    elif chr(key) == '-':
-        responses.append(key) # negative will be appended as a 45
+    elif chr(key) == '-' or chr(key)=='c':
+        responses.append(key) # negative will be appended as a 45, F as 99
         sample = roismall.reshape((1, 100))
         samples = np.append(samples, sample, 0)
+
     elif key in keys:
         responses.append(int(chr(key)))
         sample = roismall.reshape((1, 100))
