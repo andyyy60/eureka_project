@@ -12,8 +12,13 @@ def run(images_path, training_path):
         crop.crop_image(images_path+image, "temp/digits", 1710, 0, 115, 30) #crops digits
         temperature = ocr_contour.recognize(os.getcwd()+'/temp/digits.jpg', training_path) #recognize right digit
         os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
-        print temperature
+        temp = ''
+        for digit in temperature:
+            temp += digit
+        print "temperature is: {0}".format(temp)
 
     print "Success."
+
+run('/home/andy/PycharmProjects/ocr/sample_images/','/home/andy/PycharmProjects/ocr/')
 
 

@@ -49,6 +49,3 @@ def recognize(images_path, training_path):
 
     content.reverse()
     return content
-
-
-
