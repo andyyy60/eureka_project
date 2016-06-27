@@ -48,7 +48,7 @@ def run2(image, training_path):
         crop.invert(os.getcwd() + '/temp/1.jpg')
         temperature = ocr_contour.recognize(os.getcwd() + '/temp/1.jpg', training_path)
         os.remove(os.getcwd() + '/temp/1.jpg')  # clean up temp dir
-    if digits == 2:
+    if digits == 2:#If there's two digits, crop them to get them in order
         crop.crop_image(image, "temp/1", 795 + 35, 2350 + 15, 35, 55)
         crop.crop_image(image, "temp/2", 795, 2350 + 15, 38, 55)
         crop.invert(os.getcwd() + '/temp/1.jpg')
@@ -58,7 +58,7 @@ def run2(image, training_path):
         temperature = left[0] + right[0]
         os.remove(os.getcwd() + '/temp/1.jpg')  # clean up temp dir
         os.remove(os.getcwd() + '/temp/2.jpg')  # clean up temp dir
-    elif digits == 3:
+    elif digits == 3:#Edge case, crop 3 numbers and ignore any other symbols
         crop.crop_image(image, "temp/1", 795 + 35, 2350 + 15, 35, 55)
         crop.crop_image(image, "temp/2", 795, 2350 + 15, 38, 55)
         crop.crop_image(image, "temp/3", 800+64, 2365, 100-57, 55)
