@@ -17,7 +17,7 @@ def stitch_horizontally(image_list):
         new_im.paste(im, (x_offset,0))
         x_offset += im.size[0]
 
-    new_im.save('vertical_stitch.jpg')
+    new_im.save('h_stitch.jpg')
 
 def stitch_vertically(image_list):
     '''Stitches together a list of images for data training purposes, intended to
@@ -35,4 +35,4 @@ def stitch_vertically(image_list):
         new_im.paste(im, (0,x_offset))
         x_offset += im.size[1]
 
-    new_im.save('horizontal_stitch.png')
+    new_im.save('v_stitch.png')
