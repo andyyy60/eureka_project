@@ -22,7 +22,7 @@ def recognize(images_path, training_path):
     cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
         cv2.CHAIN_APPROX_SIMPLE)
     cnts = cnts[0] if imutils.is_cv2() else cnts[1]
-
+    content = []
     for c in cnts:
 
         # compute the center of the contour
@@ -45,6 +45,10 @@ def recognize(images_path, training_path):
         string = str(int((results[0][0])))
         cv2.putText(out, string, (x, y + h), 0, 1, (0, 255, 0))
 
-        return string
+        content.append(string)
+
+    content.reverse()
+    return content
+
 
 
