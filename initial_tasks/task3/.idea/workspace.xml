@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb67d08e-03f8-412a-af2c-a6772da05ec2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/data_files/h_stitch_c2.jpg" afterPath="$PROJECT_DIR$/data/h_stitch_c2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/F.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/train_digits2_jpg/cropped_neg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="task3.iws" />
@@ -231,7 +242,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data_files" />
+              <option name="myItemId" value="train_digits2_jpg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,10 +264,10 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/data_files" />
       <recent name="$PROJECT_DIR$/data/data_files/camera_2" />
       <recent name="$PROJECT_DIR$/data/data_files/camera_3" />
-      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/train_digits_png" />
     </key>
   </component>
@@ -759,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467086597639</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="oops">
+      <created>1467086661169</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1467086661169</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -822,7 +840,8 @@
     <MESSAGE value="basura" />
     <MESSAGE value="camera 2 training data (includes negative)&#10;" />
     <MESSAGE value="camera 2 training unlabeled data (includes negative)&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="camera 2 training unlabeled data (includes negative)&#10;" />
+    <MESSAGE value="oops" />
+    <option name="LAST_COMMIT_MESSAGE" value="oops" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
