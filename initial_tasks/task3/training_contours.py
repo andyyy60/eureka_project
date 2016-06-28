@@ -4,10 +4,10 @@ import sys, imutils
 import numpy as np
 import cv2
 
-image = cv2.imread('/home/andy/PycharmProjects/ocr/vertical_stitch.jpg')
+image = cv2.imread('/home/andy/PycharmProjects/ocr/test.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-thresh = cv2.threshold(blurred, 60, 255, cv2.THRESH_BINARY)[1]
+thresh = cv2.threshold(blurred, 150, 255, cv2.THRESH_BINARY)[1]#150 works here
 
 #################      Now finding Contours         ###################
 # find contours in the thresholded image
@@ -25,7 +25,6 @@ for c in cnts:
     M = cv2.moments(c)
     cX = int(M["m10"] / M["m00"])
     cY = int(M["m01"] / M["m00"])
-
     # draw the contour and center of the shape on the image
     cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
     cv2.circle(image, (cX, cY), 7, (255, 255, 255), -1)
@@ -44,7 +43,7 @@ for c in cnts:
     if key == chr(27).encode():  # (escape to quit)
         sys.exit()
     elif chr(key) == '-' or chr(key)=='c':
-        responses.append(key) # negative will be appended as a 45, F as 99
+        responses.append(key) # negative will be appended as a 45, F as c
         sample = roismall.reshape((1, 100))
         samples = np.append(samples, sample, 0)
 
