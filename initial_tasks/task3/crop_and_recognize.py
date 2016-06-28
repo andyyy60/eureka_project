@@ -1,5 +1,5 @@
 ''''Author: Andy Rosales Elias, EUREKA! 2016, Univeristy of California, Santa Barbara | andy00@umail.ucsb.edu'''
-
+#TODO: Put data sets in different folders for each camera
 import crop, ocr_contour, os, chandra_ocr
 
 def run(image, training_path):
@@ -72,3 +72,26 @@ def run2(image, training_path):
     print "temperature is: {0}".format(temperature), image
 
 
+def run3(image, training_path):
+    """reads temperature for a single image"""
+    #FOR CAMERA 3 ONLY
+    if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
+        os.makedirs(os.getcwd()+'/temp/')
+    crop.crop_image(image, "temp/digits", 425, 0, 55, 30) #crops digits
+    temperature = ocr_contour.recognize('temp/digits.jpg', training_path) #recognize right digit
+    os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
+    temp = ''
+    for digit in temperature:
+        temp += digit
+    return temp
+
+
+def loop(path):
+    for image in os.listdir(path):
+        temp = run3(path+image, "/home/andy/PycharmProjects/ocr/")
+        chandra = chandra_ocr.main(3,path+image)
+        if temp not in chandra:
+            print temp, chandra, image
+
+
+loop('/home/andy/PycharmProjects/ocr/sample_images/')
