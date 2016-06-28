@@ -2,9 +2,8 @@
 #TODO: Put data sets in different folders for each camera
 import crop, ocr_contour, os, chandra_ocr
 
-def run(image, training_path):
+def run_c2(image, training_path):
     '''reads temperature of images in a directory'''
-    #TODO: make it only read .JPG and TIFF
     #TODO: Make second argument 1,2,3
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
@@ -14,26 +13,9 @@ def run(image, training_path):
     temp = ''
     for digit in temperature:
         temp += digit
-    print "temperature is: {0}".format(temp)
+    return temp
 
-
-
-def run_single(image, training_path):
-    """reads temperature for a single image"""
-    # Reads through the images in a directory and crops temperatures
-    if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
-        os.makedirs(os.getcwd()+'/temp/')
-    crop.crop_image(image, "temp/digits", 1710, 0, 115, 30) #crops digits
-    temperature = ocr_contour.recognize(os.getcwd()+'/temp/digits.jpg', training_path) #recognize right digit
-    os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
-    temp = ''
-    for digit in temperature:
-        temp += digit
-    print "temperature is: {0}".format(temp)
-
-    print "Success."
-
-def run2(image, training_path):
+def run_c1(image, training_path):
     '''reads temperature of images in a directory. CAMERA 1 ONLY'''
     #TODO: Make second argument 1,2,3
     #TODO: MAKE NEGATIVE SIGN VALUE MEAN SOMETHING(currently means 45)
@@ -69,10 +51,10 @@ def run2(image, training_path):
         left = ocr_contour.recognize(os.getcwd() + '/temp/2.jpg', training_path)
         extra = ocr_contour.recognize(os.getcwd() + '/temp/3.jpg', training_path)
         temperature = left[0]+extra[0] + right[0]
-    print "temperature is: {0}".format(temperature), image
+    return temperature
 
 
-def run3(image, training_path):
+def run_c3(image, training_path):
     """reads temperature for a single image"""
     #FOR CAMERA 3 ONLY
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
@@ -86,12 +68,18 @@ def run3(image, training_path):
     return temp
 
 
-def loop(path):
-    for image in os.listdir(path):
-        temp = run3(path+image, "/home/andy/PycharmProjects/ocr/")
-        chandra = chandra_ocr.main(3,path+image)
-        if temp not in chandra:
-            print temp, chandra, image
+def loop(type, path):
+    if type == 3:
+        for image in os.listdir(path):
+            temp = run_c3(path+image, 'data/data_files/camera_3/')
+            print "Temp is: {0}".format(temp)
+    if type == 2:
+        for image in os.listdir(path):
+            temp = run_c2(path+image, 'data/data_files/camera_2/')
+            print "Temp is: {0}".format(temp)
+    if type == 1:
+        for image in os.listdir(path):
+            temp = run_c1(path + image, 'data/data_files/camera_1/')
+            print "Temp is: {0}".format(temp)
 
 
-loop('/home/andy/PycharmProjects/ocr/sample_images/')
