@@ -3,7 +3,7 @@ import os, exifread
 
 
 #finds images in "sample_images" folder
-image_dir = os.getcwd()+"/sample_images/"
+image_dir = "/home/andy/PycharmProjects/ocr/sample_images/"
 
 full_path = []
 date = []
