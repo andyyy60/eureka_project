@@ -69,6 +69,7 @@ def run_c3(image, training_path):
 
 
 def loop(type, path):
+    """Select camera 1,2 or 3"""
     if type == 3:
         for image in os.listdir(path):
             temp = run_c3(path+image, 'data/data_files/camera_3/')
@@ -81,5 +82,3 @@ def loop(type, path):
         for image in os.listdir(path):
             temp = run_c1(path + image, 'data/data_files/camera_1/')
             print "Temp is: {0}".format(temp)
-
-

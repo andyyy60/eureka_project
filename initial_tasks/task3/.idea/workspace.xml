@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb67d08e-03f8-412a-af2c-a6772da05ec2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../caffe/data/foo.npy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../caffe/experiment.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crop_and_recognize.py" afterPath="$PROJECT_DIR$/crop_and_recognize.py" />
     </list>
     <ignored path="task3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="633">
+              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -192,48 +191,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="task3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -802,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467178337225</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added Caffe experiment (working) to recognize imgs">
+      <created>1467178380717</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1467178380717</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -842,7 +806,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="Added function descriptions and comments" />
     <MESSAGE value="Added description comments" />
     <MESSAGE value="training data incl. negative sign&#10;" />
     <MESSAGE value="Training model now capable of learning minus signs" />
@@ -867,7 +830,8 @@
     <MESSAGE value="untethered digits for camera 1" />
     <MESSAGE value="added loop function with 'type 1-3' that refers to the type of camera" />
     <MESSAGE value="fixed path" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed path" />
+    <MESSAGE value="Added Caffe experiment (working) to recognize imgs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Caffe experiment (working) to recognize imgs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1279,8 +1243,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="633">
+          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
           <folding />
         </state>
       </provider>
