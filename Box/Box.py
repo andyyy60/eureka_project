@@ -128,10 +128,8 @@ def setup():
     return client
 
 
-def download(folder_id, download_path,max_downloads=0):
+def download(folder_id, download_path,max_downloads):
      # log into Box
-     #TODO: If a file exists, skip
-     #TODO: Implement max downloads
     cli = setup()
     folder = get_folder(cli, folder_id)
     root_folder = get_folder(cli, str(folder_id))
@@ -148,9 +146,18 @@ def download(folder_id, download_path,max_downloads=0):
              id = item.object_id
              if "file" in str(type(item)): #If this item is a file, base case
                  name = cli.file(file_id=str(id)).get()['name']
-                 with open(str(path+name), 'wb') as open_file: #Create image
-                     open_file.write(cli.file(file_id=str(id)).content())
+                 if max_downloads>0: #counter has not reached 0
+                     if not os.path.isfile(path+name): #if file does not exist
+                         with open(str(path+name), 'wb') as open_file: #Create image
+                             open_file.write(cli.file(file_id=str(id)).content())
+                             max_downloads-=1 #decrease counter
+                             print "File {} downloaded".format(name)
+                 elif max_downloads<=0:
+                     print "Success."
+                     return
+
              elif "folder" in str(type(item)):#If its a folder, call download function recursively
-                 download(id,path)
+                 download(id,path,max_downloads)
+
 
 
