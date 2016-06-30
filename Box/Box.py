@@ -36,3 +36,5 @@ client = Client(oauth2, LoggingNetwork())
 
 with open('open.jpg', 'wb') as open_file:
     open_file.write(client.file(file_id='66046362001').content())
+#TODO: look into refresh tokens
+#TODO: test
