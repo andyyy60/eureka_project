@@ -55,7 +55,7 @@ def get_files(client,fid,fname,start_with=0,num_results=20):
         #file_extensions=".JPG", doesn't work (nothing returned)
     )
     if DEBUG:
-	print 'number of search results {0}'.format(len(search_results))
+        print 'number of search results {0}'.format(len(search_results))
 
     return search_results
 
@@ -132,18 +132,18 @@ def runit(mydir,folder,client,newFName=None):
         processed_list += '{0};'.format(n)
 
     if newFName is not None: #process the file passed in via newFName arg
-	#mydir arg in this case holds the full local path and fname
-	#newFName is the shortened fname to use on the remote end
+        #mydir arg in this case holds the full local path and fname
+        #newFName is the shortened fname to use on the remote end
         file_to_upload = mydir
         if DEBUG:
             print 'newfname: {0}, filename: {1}'.format(newFName,file_to_upload)
         done = upload_it(folder,file_to_upload,newFName,processed_list)
-	if not done: #try again once on error
+        if not done: #try again once on error
             upload_it(folder,file_to_upload,newFName,processed_list)
 
     else:  #process the dir looping through the files recursively
-	#if mydir is not a dir, then the user passed in something
-	#wrong, this is checked in main
+        #if mydir is not a dir, then the user passed in something
+        #wrong, this is checked in main
         print 'uploading to folder: {0}'.format(folder['name'])
         print 'dir: {0}'.format(mydir)
         for root, dirs, files in os.walk(mydir):
@@ -152,7 +152,7 @@ def runit(mydir,folder,client,newFName=None):
                     fname = file.replace(' ', '_')
                     file_to_upload = '{0}/{1}'.format(root,file)
                     done = upload_it(folder, file_to_upload,fname,processed_list)
-		    if not done: #try again once on error
+                    if not done: #try again once on error
                         upload_it(folder, file_to_upload,fname,processed_list)
 
 #############################
@@ -179,7 +179,7 @@ def upload_it(folder, file_to_upload,fname,plist_in,plist_out=None):
             if plist_out is not None:
                 plist_out.write('{0};'.format(fname))  #append to file upon success
             print 'skipping {0}, already uploaded'.format(fname)
-	    return True #do nothing
+            return True #do nothing
         else:
             print e
             print 'Write error3: {0}'.format(fname)
