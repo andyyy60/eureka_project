@@ -223,7 +223,7 @@ def download(folder_id, download_path,max_downloads):
              id = item.object_id
              if "file" in str(type(item)): #If this item is a file, base case
                  name = cli.file(file_id=str(id)).get()['name']
-                 if max_downloads>0: #counter has not reached 0
+                 if max_downloads>0 and ".jpg" in name.lower(): #counter has not reached 0 and has jpg extension
                      if not os.path.isfile(path+name): #if file does not exist
                          with open(str(path+name), 'wb') as open_file: #Create image
                              open_file.write(cli.file(file_id=str(id)).content())
