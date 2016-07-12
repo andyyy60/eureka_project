@@ -210,9 +210,9 @@ def download(folder_id, download_path,max_downloads):
     cli = setup()
     folder = get_folder(cli, folder_id)
     root_folder = get_folder(cli, str(folder_id))
-    print 'folder owner: ' + root_folder.owned_by['login']
+    #print 'folder owner: ' + root_folder.owned_by['login']
     folder_name = root_folder['name']
-    print 'folder name: ' + folder_name
+    #print 'folder name: ' + folder_name
     folder_contents = (cli.folder(folder_id=folder_id).get_items(limit=100, offset=0))
     path = download_path+"/{}/".format(folder_name)
     if not os.path.exists(path):
@@ -236,4 +236,6 @@ def download(folder_id, download_path,max_downloads):
              elif "folder" in str(type(item)):#If its a folder, call download function recursively
                  download(id,path,max_downloads)
 
-download(7975635613, '/home/andy/ocr_knn/Box', 3)
+
+get_tokens()
+download(7843760661, "/home/andy/ocr_knn/Box", 5)
