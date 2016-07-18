@@ -1,6 +1,6 @@
 ''''Author: Andy Rosales Elias, EUREKA! 2016, Univeristy of California, Santa Barbara | andy00@umail.ucsb.edu'''
 #TODO: Put data sets in different folders for each camera
-import crop, ocr_contour, os, chandra_ocr
+import crop, ocr_contour, os, time, cv2
 
 def run_c2(image, training_path):
     '''reads temperature of images in a directory'''
@@ -68,7 +68,7 @@ def run_c3(image, training_path):
     return temp
 
 
-def loop(type, path):
+def loop(type, path, debug = False):
     """Select camera 1,2 or 3"""
     if type == 3:
         for image in os.listdir(path):
@@ -78,7 +78,15 @@ def loop(type, path):
         for image in os.listdir(path):
             temp = run_c2(path+image, 'data/data_files/camera_2/')
             print "Temp is: {0}".format(temp)
+            if debug == True:
+                img = cv2.imread(path+image)
+                cv2.imshow(image, img)
+                key  = cv2.waitKey(0)
+                print key
+                cv2.destroyAllWindows()
+
     if type == 1:
         for image in os.listdir(path):
             temp = run_c1(path + image, 'data/data_files/camera_1/')
             print "Temp is: {0}".format(temp)
+
