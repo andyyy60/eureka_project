@@ -213,29 +213,36 @@ def download(folder_id, download_path,max_downloads):
     #print 'folder owner: ' + root_folder.owned_by['login']
     folder_name = root_folder['name']
     #print 'folder name: ' + folder_name
-    folder_contents = (cli.folder(folder_id=folder_id).get_items(limit=100, offset=0))
-    path = download_path+"/{}/".format(folder_name)
-    if not os.path.exists(path):
-         os.makedirs(path)
-    if len(folder_contents)>0:
-        # cli.file(file_id='SOME_FILE_ID').get()['name']
-        for item in folder_contents:
-             id = item.object_id
-             if "file" in str(type(item)): #If this item is a file, base case
-                 name = cli.file(file_id=str(id)).get()['name']
-                 if max_downloads>0 and ".jpg" in name.lower(): #counter has not reached 0 and has jpg extension
-                     if not os.path.isfile(path+name): #if file does not exist
-                         with open(str(path+name), 'wb') as open_file: #Create image
-                             open_file.write(cli.file(file_id=str(id)).content())
-                             max_downloads-=1 #decrease counter
-                             print "File {} downloaded".format(name)
-                 elif max_downloads<=0:
-                     print "Success."
-                     sys.exit(1)
+    gap = len((cli.folder(folder_id=folder_id).get_items(limit=1000, offset=0)))
+    increment = 0
+    testSum = 0
+    while (gap > 0):
+        folder_contents = (cli.folder(folder_id=folder_id).get_items(limit=1000, offset=increment))
+        testSum += len(folder_contents)
+        gap = len(folder_contents)
+        increment+=1000
+        path = download_path+"/{}/".format(folder_name)
+        if not os.path.exists(path):
+             os.makedirs(path)
+        if len(folder_contents)>0:
+            # cli.file(file_id='SOME_FILE_ID').get()['name']
+            for item in folder_contents:
+                 id = item.object_id
+                 if "file" in str(type(item)): #If this item is a file, base case
+                     name = cli.file(file_id=str(id)).get()['name']
+                     if max_downloads>0 and ".jpg" in name.lower(): #counter has not reached 0 and has jpg extension
+                         if not os.path.isfile(path+name): #if file does not exist
+                             with open(str(path+name), 'wb') as open_file: #Create image
+                                 open_file.write(cli.file(file_id=str(id)).content())
+                                 max_downloads-=1 #decrease counter
+                                 print "File {} downloaded".format(name)
+                     elif max_downloads<=0:
+                         print "Success."
+                         sys.exit(1)
 
-             elif "folder" in str(type(item)):#If its a folder, call download function recursively
-                 download(id,path,max_downloads)
+                 elif "folder" in str(type(item)):#If its a folder, call download function recursively
+                     download(id,path,max_downloads)
 
 
-get_tokens()
-download(7843760661, "/home/andy/ocr_knn/Box", 5)
+auth()
+download(7932878961, '/mnt/images/', 10000)
