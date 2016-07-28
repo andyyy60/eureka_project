@@ -90,3 +90,21 @@ def loop(type, path, debug = False):
             temp = run_c1(path + image, 'data/data_files/camera_1/')
             print "Temp is: {0}".format(temp)
 
+
+def run(pictype, image_path):
+    if pictype == 1:
+        temp = run_c3(image_path, 'data/data_files/camera_3/')
+        print "Temp is: {0}".format(temp)
+    if pictype == 2:
+        temp = run_c2(image_path, 'data/data_files/camera_2/')
+        print "Temp is: {0}".format(temp)
+    if pictype == 3:
+        temp = run_c1(image_path, 'data/data_files/camera_1/')
+        print "Temp is: {0}".format(temp)
+
+
+##############################################################################################
+
+
+##RUN THIS FUNCTION
+#run(2, "/home/andy/image_base/images/bear_c/Main_2016-01-04_16:13:53_2556.JPG")
