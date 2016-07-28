@@ -1,6 +1,6 @@
 ''''Author: Andy Rosales Elias, EUREKA! 2016, Univeristy of California, Santa Barbara | andy00@umail.ucsb.edu'''
 #TODO: Put data sets in different folders for each camera
-import crop, ocr_contour, os, time, cv2
+import crop, ocr_contour, os, time, cv2, argparse, sys
 
 def run_c2(image, training_path):
     '''reads temperature of images in a directory'''
@@ -91,20 +91,31 @@ def loop(type, path, debug = False):
             print "Temp is: {0}".format(temp)
 
 
-def run(pictype, image_path):
-    if pictype == 1:
-        temp = run_c3(image_path, 'data/data_files/camera_3/')
+def main():
+    parser = argparse.ArgumentParser(description='OCR Recognition tool for Sedgwick Reserve photos')
+    parser.add_argument('pictype', action='store', type=int, help='1,2,3')
+    parser.add_argument('base', action='store', help='JPEG image')
+    # optional arguments
+    # parser.add_argument('--blur','-b',action='store',default=False,type=bool,help='day threshold')
+    args = parser.parse_args()
+    if args.pictype < -1 and args.pictype > 3:
+        # 0 is hidden and used for testing
+        print 'pictype must be 1,2, or 3'
+        sys.exit(1)
+
+    if args.pictype == 1:
+        temp = run_c3(args.base, 'data/data_files/camera_3/')
         print "Temp is: {0}".format(temp)
-    if pictype == 2:
-        temp = run_c2(image_path, 'data/data_files/camera_2/')
+    if args.pictype == 2:
+        temp = run_c2(args.base, 'data/data_files/camera_2/')
         print "Temp is: {0}".format(temp)
-    if pictype == 3:
-        temp = run_c1(image_path, 'data/data_files/camera_1/')
+    if args.pictype == 3:
+        temp = run_c1(args.base, 'data/data_files/camera_1/')
         print "Temp is: {0}".format(temp)
 
 
-##############################################################################################
 
-
-##RUN THIS FUNCTION
-#run(2, "/home/andy/image_base/images/bear_c/Main_2016-01-04_16:13:53_2556.JPG")
+######################################
+if __name__ == "__main__":
+    main()
+######################################
