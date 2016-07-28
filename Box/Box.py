@@ -259,4 +259,4 @@ def search_download(path):
                 count += 1
                 print count
 
-#search_download("/home/andy/ocr_knn/Box/images/bear_t/")
+#earch_download("/home/andy/ocr_knn/Box/images/bear_t/")
