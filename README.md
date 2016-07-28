@@ -10,7 +10,7 @@
     
 2. Running:
 	
-    python crop_and_recognize [pictype] [path to image]
+    python crop_and_recognize [-pictype] [-path to image]
  	
     
     output example: "Temp is: 64"
