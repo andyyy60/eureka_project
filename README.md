@@ -6,10 +6,9 @@
 	
     git clone https://github.com/andyyy60/ocr_knn
     
-2. 
-	cd ocr_knn/initial_tasks/task3/
+    cd ocr_knn/initial_tasks/task3/
     
-3. Running:
+2. Running:
 	
     python crop_and_recognize [pictype] [path to image]
  	
