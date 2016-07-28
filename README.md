@@ -1,4 +1,5 @@
 **Temperature recognition using Optical Character Recognition with k-Nearest-Neighbor**
+
 **Assuming OpenCV 3.1 has been installed correctly**
 
 1. Clone this repository to your machine
