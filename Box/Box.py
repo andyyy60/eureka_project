@@ -260,3 +260,4 @@ def search_download(path):
                 print count
 
 #earch_download("/home/andy/ocr_knn/Box/images/bear_t/")
+download(7950045909, '/home/andy/PycharmProjects/data_collector/empty_finder/unlabeled', 1000)
