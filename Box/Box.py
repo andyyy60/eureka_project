@@ -243,15 +243,15 @@ def download(folder_id, download_path,max_downloads):
                  elif "folder" in str(type(item)):#If its a folder, call download function recursively
                      download(id,path,max_downloads)
 
-def search_download(path):
+def search_download(file, path):
     count = 0
     # log into Box
     cli = setup()
-    f = open("bear_t.txt", "r")
+    f = open(file, "r")
     for lines in f:
         print lines
         fixed = lines[:-1]
-        results = cli.search(fixed,1,0)
+        results = cli.search(lines,1,0)
         my_id = results[0].object_id
         if not os.path.isfile(path+fixed):  # if file does not exist
             with open(str(path+fixed), 'wb') as open_file:  # Create image
@@ -259,5 +259,5 @@ def search_download(path):
                 count += 1
                 print count
 
-#earch_download("/home/andy/ocr_knn/Box/images/bear_t/")
-download(7950045909, '/home/andy/PycharmProjects/data_collector/empty_finder/unlabeled', 1000)
+search_download("/home/andy/PycharmProjects/data_collector/src/data/deer.txt","/home/andy/images/new/deer/")
+# download(7950045909, '/home/andy/PycharmProjects/data_collector/empty_finder/unlabeled', 1000)
