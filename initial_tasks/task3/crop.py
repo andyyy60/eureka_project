@@ -45,7 +45,7 @@ def crop_ratio(image, output):
 def loop(folder):
     """recursively loops and crops through a directory of images"""
     for image in os.listdir(folder):
-        crop_ratio(folder+image, "/home/andy/images/new2/Bear/"+image)
+        crop_ratio(folder+image, "/home/andy/images/cropped/Coyote/"+image)
 
-loop("/home/andy/images/bear/")
+loop("/home/andy/images/coyote/")
 
