@@ -6,7 +6,7 @@ def crop_image(input_image, output_image, start_x, start_y, width, height):
     input_img = Image.open(input_image)
     box = (start_x, start_y, start_x + width, start_y + height)
     output_img = input_img.crop(box)
-    output_img.save(output_image +".jpg")
+    output_img.save(output_image)
 
 
 def invert(image):
@@ -35,11 +35,17 @@ def invert(image):
 #crop_image(os.getcwd() + "/sample_images/Main_2015-01-18_08_52_23_114.JPG", "output", 1755 + 35, 0, 38, 30) --> right didit
 
 
-def crop_ratio(image, choice):
+def crop_ratio(image, output):
     im = Image.open(image)
     width = im.size[0]
     height = im.size[1]
-    if choice == 0:
-        crop_image(image, "output", 0, 50, width, height-250)
+    crop_image(image, output, 0, 50, width, height-250)
 
+
+def loop(folder):
+    """recursively loops and crops through a directory of images"""
+    for image in os.listdir(folder):
+        crop_ratio(folder+image, "/home/andy/images/new2/Bear/"+image)
+
+loop("/home/andy/images/bear/")
 
