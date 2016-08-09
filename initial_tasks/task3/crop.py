@@ -35,3 +35,11 @@ def invert(image):
 #crop_image(os.getcwd() + "/sample_images/Main_2015-01-18_08_52_23_114.JPG", "output", 1755 + 35, 0, 38, 30) --> right didit
 
 
+def crop_ratio(image, choice):
+    im = Image.open(image)
+    width = im.size[0]
+    height = im.size[1]
+    if choice == 0:
+        crop_image(image, "output", 0, 50, width, height-250)
+
+
