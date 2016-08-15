@@ -39,13 +39,19 @@ def crop_ratio(image, output):
     im = Image.open(image)
     width = im.size[0]
     height = im.size[1]
-    crop_image(image, output, 0, 50, width, height-250)
+    crop_image(image, output, 0, 50, width, height-120)
 
 
 def loop(folder):
     """recursively loops and crops through a directory of images"""
     for image in os.listdir(folder):
-        crop_ratio(folder+image, "/home/andy/images/cropped/Coyote/"+image)
+        crop_ratio(folder+image, "/home/andy/images/cropped/Empty/"+image)
 
-loop("/home/andy/images/coyote/")
+def rename(folder,tick, tock, myclass):
+    "loops through a folder to rename every item in it, tick = start, tock = stop"
+    count = tick
+    for item in range(tick, tock+1):
+        os.rename("{}/{}.jpg".format(folder,count), "/home/andy/run1/{}/{}.jpg".format(myclass,str(count)))
+        count +=1
+
 
