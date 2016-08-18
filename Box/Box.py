@@ -1,4 +1,4 @@
-'''Author: Chandra Krintz, UCSB, ckrintz@cs.ucsb.edu, AppScale BSD license'''
+'''Authors: Chandra Krintz, Andy Rosales Elias UCSB, ckrintz@cs.ucsb.edu, andy00@umail.ucsb.edu AppScale BSD license'''
 import os,sys,json,argparse
 from boxsdk.exception import BoxOAuthException
 from boxsdk.exception import BoxAPIException
