@@ -13,17 +13,16 @@ def paste(image):
     make_bg(w,h)
     background = Image.open("/home/andy/PycharmProjects/animal_cropping/src/out.png")
     background.paste(foreground, (0,0), foreground)
-    background.save("bear_black_bg.png")
+    background.save("transparent1.png")
 
 
 def pixel_intensity(image):
     img = Image.open(image)
-    img = img.convert("RGB")
     im2 = img.point(lambda p: p * .6)
-    im2.save("out2.png")
+    im2.save("out_bear.png")
 
 
-pixel_intensity("/home/andy/PycharmProjects/animal_cropping/transparent2.png")
+pixel_intensity("/home/andy/PycharmProjects/animal_cropping/bear_test.png")
 
 # paste("/home/andy/PycharmProjects/animal_cropping/tmp/out.png")4
 
@@ -67,7 +66,7 @@ def make_transparent(input_image, flip = True, transparent = False):
             img.putdata(newData)
             img.save("transparent2.png", "PNG")
 
-make_transparent("/home/andy/PycharmProjects/animal_cropping/src/out2.png", True, False)
+# make_transparent("/home/andy/PycharmProjects/animal_cropping/src/out2.png", True, False)
 
 # def test():
 #     overlay = Image.open('/home/andy/PycharmProjects/animal_cropping/tmp/transparent1.png')

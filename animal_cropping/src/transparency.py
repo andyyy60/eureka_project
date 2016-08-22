@@ -1,8 +1,24 @@
 from PIL import Image
-import os, sys, random, time, cv2, exifread, string
+import os, sys, random, time, cv2, exifread, string, numpy as np
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
+
+def make_bg(width, height):
+    blank_image = np.zeros((height, width, 3), np.uint8)
+    blank_image[:width] = (0, 0, 0)  # (B, G, R)
+    cv2.imwrite("out.png",blank_image)
+
+def paste(image, output=os.curdir):
+    foreground = Image.open(image)
+    w, h = foreground.size
+    make_bg(w,h)
+    background = Image.open("out.png")
+    background.paste(foreground, (0,0), foreground)
+    background.save(output+"/transparent1.png")
+    os.remove("out.png")
+
+# paste("/home/andy/PycharmProjects/animal_cropping/bear/bear_5.png")
 
 def flip_h(image):
     img = Image.open(image)
@@ -10,7 +26,7 @@ def flip_h(image):
 
 # flip_h("/home/andy/PycharmProjects/animal_cropping/coyote/coyote_5.png")
 
-def make_transparent(input_image, flip = True, transparent = False):
+def make_transparent(input_image, output_path = os.curdir, flip = True, transparent = False):
     if not transparent:
         img = Image.open(input_image)
         img = img.convert("RGBA")
@@ -24,13 +40,13 @@ def make_transparent(input_image, flip = True, transparent = False):
                 newData.append(item)
 
         img.putdata(newData)
-        img.save("transparent1.png", "PNG")
+        img.save(output_path+"/transparent1.png", "PNG")
     if transparent:
         img = Image.open(input_image)
-        img.save("transparent1.png", "PNG")
+        img.save(output_path+"/transparent1.png", "PNG")
         flip_h(input_image)
         img = Image.open("flipped_h.png")
-        img.save("transparent2.png", "PNG")
+        img.save(output_path+"/transparent1.png", "PNG")
 
     if flip:
         flip_h(input_image)
@@ -48,8 +64,10 @@ def make_transparent(input_image, flip = True, transparent = False):
                     newData.append(item)
 
             img.putdata(newData)
-            img.save("transparent2.png", "PNG")
+            img.save(output_path+"/transparent2.png", "PNG")
             os.remove("flipped_h.png")
+
+# make_transparent("/home/andy/PycharmProjects/animal_cropping/bear/bear_5/tmp/out_bear.png", "/home/andy/images/test")
 
 def pixel_intensity(background, path):
     """RETURNS: Path of image. tmp folder will be returned if image was darkened"""
@@ -62,24 +80,26 @@ def pixel_intensity(background, path):
     time = dt_value[1].split(':')
     hour = int(time[0])
     if (hour > 5 and hour <= 7) or (hour >= 18 and hour < 22):
-        im = Image.open(path+"/transparent1.png")
-        img = im.convert("RGB")
-        im2 = img.point(lambda p: p * .6)
+        if not os.path.exists(path+"/tmp/"):
+            os.makedirs(path+"/tmp/")
+        paste(path+"/transparent1.png", path+"/tmp/")
+        im = Image.open(path+"/tmp/transparent1.png")
+        im2 = im.point(lambda p: p * .6)
         im2.save(path+"/tmp/transparent1.png")
-        os.chdir(path+'/tmp')
-        make_transparent(path+"/tmp/transparent1.png", True, False)
+        make_transparent(path+"/tmp/transparent1.png", path+"/tmp/")
         path = path+"/tmp/"
     elif (hour >= 22 or hour <= 5):
-        im = Image.open(path+"/transparent1.png")
-        img = im.convert("RGB")
-        im2 = img.point(lambda p: p * .4)
+        if not os.path.exists(path+"/tmp/"):
+            os.makedirs(path+"/tmp/")
+        paste(path+"/transparent1.png", path+"/tmp/")
+        im = Image.open(path+"/tmp/transparent1.png")
+        im2 = im.point(lambda p: p * .4)
         im2.save(path+"/tmp/transparent1.png")
-        os.chdir(path+'/tmp')
-        make_transparent(path+"/tmp/transparent1.png", True, False)
+        make_transparent(path+"/tmp/transparent1.png", path+"/tmp/")
         path = path+"/tmp/"
     return path
 
-# pixel_intensity("/home/andy/images/empty/Main_2016-03-16_07:06:20_0006.JPG", "/home/andy/PycharmProjects/animal_cropping/coyote/coyote_1")
+# pixel_intensity("/home/andy/images/empty/Main_2016-03-16_07:06:20_0006.JPG", "/home/andy/PycharmProjects/animal_cropping/bear/bear_5")
 
 
 
@@ -125,12 +145,12 @@ def animal_placement(path, empty_background, save_path):
 
 # animal_placement("/home/andy/PycharmProjects/animal_cropping/", "/home/andy/images/empty/1.jpg")
 
-def main(folder):
+def main(folder, animal_folder, output):
     for image in os.listdir(folder):
         full_path = folder+image
-        animal_placement("/home/andy/PycharmProjects/animal_cropping/coyote/coyote_1", full_path, "/home/andy/images/test/")
+        animal_placement(animal_folder, full_path, output)
 
-main("/home/andy/images/empty/")
+# main()
 
 def DEMO_animal_placement(root, empty_background, animal):
     background = Image.open(empty_background)
