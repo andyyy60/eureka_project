@@ -1,7 +1,7 @@
 import os, sys, random, time, cv2, exifread, string, numpy as np
 from crop import *
 
-def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
+def id_generator(size=10, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
 def make_bg(width, height):
@@ -155,7 +155,11 @@ def main(bg_folder, animal_folder, output):
         full_path = bg_folder+image
         animal_placement(animal_folder, full_path, output)
 
-# main("/home/andy/images/empty/", "/home/andy/PycharmProjects/animal_cropping/deer/deer_5", "/home/andy/images/test/")
+def loop(bg_folder,root, animal, output):
+    for i in range(1, 6):
+        main(bg_folder, root+"{}/{}_{}/".format(animal,animal,i),output)
+
+loop("/home/andy/images/empty/","/home/andy/PycharmProjects/animal_cropping/","coyote","/home/andy/images/test/")
 
 def DEMO_animal_placement(root, empty_background, animal):
     background = Image.open(empty_background)
