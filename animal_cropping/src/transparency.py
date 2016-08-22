@@ -1,5 +1,5 @@
-from PIL import Image
 import os, sys, random, time, cv2, exifread, string, numpy as np
+from crop import *
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
@@ -99,11 +99,11 @@ def pixel_intensity(background, path):
         path = path+"/tmp/"
     return path
 
-# pixel_intensity("/home/andy/images/empty/Main_2016-03-16_07:06:20_0006.JPG", "/home/andy/PycharmProjects/animal_cropping/bear/bear_5")
+# pixel_intensity("/home/andy/training/ocr_knn/master_training/empty/236.jpg", "/home/andy/PycharmProjects/animal_cropping/bear/bear_5")
 
 
 
-# make_transparent("/home/andy/PycharmProjects/animal_cropping/coyote/coyote_5.png", True, True)
+# make_transparent("/home/andy/PycharmProjects/animal_cropping/bear/Bear_6.png")
 
 def resize(infile):
 
@@ -114,10 +114,12 @@ def resize(infile):
         im.thumbnail(size, Image.ANTIALIAS)
         im.save(infile, "PNG")
 
+# resize("/home/andy/PycharmProjects/animal_cropping/bear/Bear_6.png")
 
 def animal_placement(path, empty_background, save_path):
     background = Image.open(empty_background)
     bg_w, bg_h = background.size
+    bg_h -=120
     path = pixel_intensity(empty_background, path)
     for i in range(1,3):
         for n in range(1, bg_w, bg_w / 10):
@@ -140,17 +142,20 @@ def animal_placement(path, empty_background, save_path):
             else:
                 foreground = Image.open(cropped_image_f)
             background.paste(foreground, (n, bg_middle), foreground)
-            background.save(save_path+id_generator()+".jpg")
+            id_gen = id_generator()
+            background.save(save_path+id_gen+".jpg")
+            crop_ratio(save_path+id_gen+".jpg", save_path+id_gen+".jpg")
 
 
-# animal_placement("/home/andy/PycharmProjects/animal_cropping/", "/home/andy/images/empty/1.jpg")
 
-def main(folder, animal_folder, output):
-    for image in os.listdir(folder):
-        full_path = folder+image
+# animal_placement("/home/andy/PycharmProjects/animal_cropping/bear/bear_3/", "/home/andy/images/empty/1.jpg")
+
+def main(bg_folder, animal_folder, output):
+    for image in os.listdir(bg_folder):
+        full_path = bg_folder+image
         animal_placement(animal_folder, full_path, output)
 
-# main()
+# main("/home/andy/images/empty/", "/home/andy/PycharmProjects/animal_cropping/deer/deer_5", "/home/andy/images/test/")
 
 def DEMO_animal_placement(root, empty_background, animal):
     background = Image.open(empty_background)
