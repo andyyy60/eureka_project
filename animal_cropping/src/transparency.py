@@ -122,7 +122,12 @@ def animal_placement(path, empty_background, save_path):
     bg_h -=120
     path = pixel_intensity(empty_background, path)
     for i in range(1,3):
-        for n in range(1, bg_w, bg_w / 10):
+        for k in range(2):
+            list = []
+            for x in range(1, bg_w, (bg_w / 10)):
+                list.append(x)
+            randomizer = random.randint(0, len(list)-1)
+            n = list[randomizer]
             vertical_pos = random.randint(1,3)
             if vertical_pos == 1:
                 bg_middle = bg_h - (bg_h / 4)
