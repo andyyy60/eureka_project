@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/data/train_digits3_jpg/F_c2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/data/train_digits3_jpg/cropped_neg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/crop.py" afterPath="$PROJECT_DIR$/flask_ocr/backend/crop.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" afterPath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_3/generalresponses.data" afterPath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_3/generalresponses.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_3/generalsamples.data" afterPath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_3/generalsamples.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py" afterPath="$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/stitch.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/stitch.py" />
     </list>
     <ignored path="ocr_knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -963,7 +955,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472506781576</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="more minor bug fixes&#10;">
+      <created>1472509012469</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1472509012469</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1009,7 +1008,8 @@
     <MESSAGE value="functions for data validation" />
     <MESSAGE value="quick fix" />
     <MESSAGE value="training data v2 + small bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="training data v2 + small bug fix" />
+    <MESSAGE value="more minor bug fixes&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="more minor bug fixes&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
