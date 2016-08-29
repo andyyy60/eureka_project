@@ -54,5 +54,5 @@ def rename(folder,tick, tock, myclass):
         os.rename("{}/{}.jpg".format(folder,count), "/home/andy/run1/{}/{}.jpg".format(myclass,str(count)))
         count +=1
 
-loop("/home/andy/training/ocr_knn/master_training/empty/")
+# loop("/home/andy/training/ocr_knn/master_training/empty/")
 
