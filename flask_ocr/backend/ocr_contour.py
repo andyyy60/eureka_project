@@ -42,7 +42,6 @@ def recognize(images_path, training_path):
             retval, results, neigh_resp, dists = model.findNearest(roismall, k=1)
             string = str(int((results[0][0])))
             if string != str(42):
-                print string
                 cv2.putText(out, string, (x, y + h), 0, 1, (0, 255, 0))
                 content.append(string)
     content.reverse()
