@@ -100,13 +100,13 @@ def main(pictype, base):
     #     sys.exit(1)
 
     if pictype == 3:
-        temp = run_c3(base, 'data/data_files/camera_3/')
+        temp = run_c3(base, 'backend/data/data_files/camera_3/')
         return int(temp)
     if pictype == 2:
-        temp = run_c2(base, 'data/data_files/camera_2/')
+        temp = run_c2(base, 'backend/data/data_files/camera_2/')
         return int(temp)
     if pictype == 1:
-        temp = run_c1(base, 'data/data_files/camera_1/')
+        temp = run_c1(base, 'backend/data/data_files/camera_1/')
         return int(temp)
 
 
