@@ -3,9 +3,9 @@
 	Types of cameras allowed and resolution
 	
 	
-	pictype = 1 | BUSHNELL BONE CANYON / BONET
-	pictype = 2 | HC500 HYPERFIRE / MAIN 
-	pictype = 3 | RECONYX / BONEH
+	pictype = 1 | BUSHNELL BONE CANYON / BONET | 3264 x 2448 px
+	pictype = 2 | HC500 HYPERFIRE / MAIN | 1920 x 1080 px
+	pictype = 3 | RECONYX / BONEH | 3776 x 2124 px
 	
 	USE:
 		to use the API service via cURL:
