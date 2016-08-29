@@ -112,4 +112,4 @@ def main(pictype, base):
 
 # crop.crop_image('/home/andy/Downloads/BoneH_2015-08-27_16-03-05_7659.JPG', "digits", 435, 0, 70, 30)  # crops digits
 
-print main(3,'/home/andy/Downloads/BoneH_2015-08-27_09-27-31_7589.JPG')
+# print main(3,'/home/andy/Downloads/BoneH_2015-08-27_09-27-31_7589.JPG')
