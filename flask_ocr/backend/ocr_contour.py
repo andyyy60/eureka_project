@@ -40,8 +40,9 @@ def recognize(images_path, training_path):
             roismall = roismall.reshape((1, 100))
             roismall = np.float32(roismall)
             retval, results, neigh_resp, dists = model.findNearest(roismall, k=1)
-            if str(int((results[0][0]))) != '99':
-                string = str(int((results[0][0])))
+            string = str(int((results[0][0])))
+            if string != str(42):
+                print string
                 cv2.putText(out, string, (x, y + h), 0, 1, (0, 255, 0))
                 content.append(string)
     content.reverse()

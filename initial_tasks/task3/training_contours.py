@@ -4,10 +4,10 @@ import sys, imutils
 import numpy as np
 import cv2
 
-image = cv2.imread('/home/andy/PycharmProjects/ocr/test.jpg')
+image = cv2.imread('h_stitch.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-thresh = cv2.threshold(blurred, 150, 255, cv2.THRESH_BINARY)[1]#150 works here
+thresh = cv2.threshold(blurred, 151, 255, cv2.THRESH_BINARY)[1]#150 works here
 
 #################      Now finding Contours         ###################
 # find contours in the thresholded image
@@ -39,10 +39,10 @@ for c in cnts:
     cv2.imshow('norm', image)
     key = cv2.waitKey(0)
     key = 48+(key-1114032)
-    print(chr(key))
+    print(chr(key)), key
     if key == chr(27).encode():  # (escape to quit)
         sys.exit()
-    elif chr(key) == '-' or chr(key)=='c':
+    elif chr(key) == '-' or chr(key)=='*':
         responses.append(key) # negative will be appended as a 45, F as c
         sample = roismall.reshape((1, 100))
         samples = np.append(samples, sample, 0)

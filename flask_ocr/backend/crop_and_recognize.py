@@ -100,15 +100,15 @@ def main(pictype, base):
     #     sys.exit(1)
 
     if pictype == 3:
-        temp = run_c3(base, '/home/andy/PycharmProjects/flask_project/ocr_backend/data/data_files/camera_3/')
+        temp = run_c3(base, 'data/data_files/camera_3/')
         return int(temp)
     if pictype == 2:
-        temp = run_c2(base, '/home/andy/PycharmProjects/flask_project/ocr_backend/data/data_files/camera_2/')
+        temp = run_c2(base, 'data/data_files/camera_2/')
         return int(temp)
     if pictype == 1:
-        temp = run_c1(base, '/home/andy/PycharmProjects/flask_project/ocr_backend/data/data_files/camera_1/')
+        temp = run_c1(base, 'data/data_files/camera_1/')
         return int(temp)
 
 
 
-print main(2, "/home/andy/images/empty/9.jpg")
+print main(1,'/home/andy/Downloads/BoneT_2014-05-30_19-05-53_038.JPG')

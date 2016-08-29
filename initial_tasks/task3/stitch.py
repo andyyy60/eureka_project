@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from PIL import Image
 
 
@@ -36,3 +36,9 @@ def stitch_vertically(image_list):
         x_offset += im.size[1]
 
     new_im.save('v_stitch.png')
+#
+# list = ["/home/andy/ocr_knn/initial_tasks/task3/data/train_digits_png/"+file for file in os.listdir('/home/andy/ocr_knn/initial_tasks/task3/data/train_digits_png')]
+#
+# list.sort()
+#
+# stitch_horizontally(list)
