@@ -15,7 +15,7 @@ def invert(image):
     inverted.save(str(image))
 
 
-
+# crop_image("/home/andy/ocr_knn/flask_ocr/backend/temp/digits.jpg", "F_c2", 44,0,30,30)
 
 
                                             ##CAMERA 3##

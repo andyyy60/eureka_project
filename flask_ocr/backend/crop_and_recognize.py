@@ -55,7 +55,7 @@ def run_c3(image, training_path):
     #FOR CAMERA 3 ONLY
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
-    crop.crop_image(image, "temp/digits", 425, 0, 55, 30) #crops digits
+    crop.crop_image(image, "temp/digits", 435, 0, 70, 30) #crops digits
     temperature = ocr_contour.recognize('temp/digits.jpg', training_path) #recognize right digit
     os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
     temp = ''
@@ -110,5 +110,6 @@ def main(pictype, base):
         return int(temp)
 
 
+# crop.crop_image('/home/andy/Downloads/BoneH_2015-08-27_16-03-05_7659.JPG', "digits", 435, 0, 70, 30)  # crops digits
 
-print main(1,'/home/andy/Downloads/BoneT_2014-05-30_19-05-53_038.JPG')
+print main(3,'/home/andy/Downloads/BoneH_2015-08-27_09-27-31_7589.JPG')
