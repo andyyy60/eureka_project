@@ -103,6 +103,8 @@ def main():
         # 0 is hidden and used for testing
         print 'pictype must be 1,2, or 3'
         sys.exit(1)
+    if str(args.base[-4:]).lower() != '.jpg':
+        return "Temp is: {0}".format(-9999)
     im = Image.open(args.base)
     width, height = im.size
     widths = [3264,1920,3776]
