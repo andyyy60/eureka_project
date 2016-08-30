@@ -33,15 +33,15 @@ def recognize(images_path, training_path):
         # draw the contour and center of the shape on the image
         cv2.circle(image, (cX, cY), 7, (255, 255, 255), -1)
         [x, y, w, h] = cv2.boundingRect(c)
-        if cv2.contourArea(c)>50: #the higher the threshold, the smaller the area
+        if cv2.contourArea(c)>70: #the higher the threshold, the smaller the area
             cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
             roi = thresh[y:y + h, x:x + w]
             roismall = cv2.resize(roi, (10, 10))
             roismall = roismall.reshape((1, 100))
             roismall = np.float32(roismall)
             retval, results, neigh_resp, dists = model.findNearest(roismall, k=1)
-            if str(int((results[0][0]))) != '99':
-                string = str(int((results[0][0])))
+            string = str(int((results[0][0])))
+            if string != str(42):
                 cv2.putText(out, string, (x, y + h), 0, 1, (0, 255, 0))
                 content.append(string)
     content.reverse()
