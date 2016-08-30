@@ -1,6 +1,7 @@
 ''''Author: Andy Rosales Elias, EUREKA! 2016, Univeristy of California, Santa Barbara | andy00@umail.ucsb.edu'''
 #TODO: Put data sets in different folders for each camera
 import crop, ocr_contour, os, time, cv2, argparse, sys
+from PIL import Image
 
 def run_c2(image, training_path):
     '''reads temperature of images in a directory'''
@@ -13,7 +14,7 @@ def run_c2(image, training_path):
     temp = ''
     for digit in temperature:
         temp += digit
-    return temp
+    return int(temp)
 
 def run_c1(image, training_path):
     '''reads temperature of images in a directory. CAMERA 1 ONLY'''
@@ -51,7 +52,7 @@ def run_c1(image, training_path):
         left = ocr_contour.recognize(os.getcwd() + '/temp/2.jpg', training_path)
         extra = ocr_contour.recognize(os.getcwd() + '/temp/3.jpg', training_path)
         temperature = left[0]+extra[0] + right[0]
-    return temperature
+    return int(temperature)
 
 
 def run_c3(image, training_path):
@@ -65,7 +66,7 @@ def run_c3(image, training_path):
     temp = ''
     for digit in temperature:
         temp += digit
-    return temp
+    return int(temp)
 
 
 def loop(type, path, debug = False):
@@ -102,20 +103,28 @@ def main():
         # 0 is hidden and used for testing
         print 'pictype must be 1,2, or 3'
         sys.exit(1)
-
-    if args.pictype == 3:
-        temp = run_c3(args.base, 'data/data_files/camera_3/')
-        print "Temp is: {0}".format(temp)
-    if args.pictype == 2:
-        temp = run_c2(args.base, 'data/data_files/camera_2/')
-        print "Temp is: {0}".format(temp)
-    if args.pictype == 1:
-        temp = run_c1(args.base, 'data/data_files/camera_1/')
-        print "Temp is: {0}".format(temp)
+    im = Image.open(args.base)
+    width, height = im.size
+    widths = [3264,1920,3776]
+    heights = [2248,1080,2124]
+    if (width not in widths) or (height not in heights): #If the image is not from one of the cameras
+        return "Temp is: {0}".format(-9999)
+    try:
+        if args.pictype == 3:
+            temp = run_c3(args.base, 'data/data_files/camera_3/')
+            return "Temp is: {0}".format(temp)
+        if args.pictype == 2:
+            temp = run_c2(args.base, 'data/data_files/camera_2/')
+            return "Temp is: {0}".format(temp)
+        if args.pictype == 1:
+            temp = run_c1(args.base, 'data/data_files/camera_1/')
+            return "Temp is: {0}".format(temp)
+    except:
+        return "Temp is: {0}".format(-9999)
 
 
 
 ######################################
 if __name__ == "__main__":
-    main()
+    print main()
 ######################################
