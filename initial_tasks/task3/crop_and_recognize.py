@@ -109,6 +109,8 @@ def main():
     heights = [2248,1080,2124]
     if (width not in widths) or (height not in heights): #If the image is not from one of the cameras
         return "Temp is: {0}".format(-9999)
+    elif (widths.index(width) != heights.index(height)): #if its not the right w x h combination
+        return "Temp is: {0}".format(-9999)
     try:
         if args.pictype == 3:
             temp = run_c3(args.base, 'data/data_files/camera_3/')
