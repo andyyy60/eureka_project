@@ -2,7 +2,7 @@
 
 Repository for the project "Where is the bear?" a tool that aims to classify animals from the [Sedgwick Reserve](http://sedgwick.nrs.ucsb.edu/) using different machine learning libraries. Classifying these images along with information such as temperature and time/date taken can provide a unique insight in the hidden world of wildlife.
 
-## Getting Started
+## Getting Started (Temperature Recognition)
 
 These instructions have been tested only in Ubuntu 14.04 (Trusty) and Ubuntu 15.10 (Wily)
 
