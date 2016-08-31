@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" afterPath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
     </list>
     <ignored path="ocr_knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="114" column="49" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
+            <state relative-caret-position="164">
+              <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
               <folding>
                 <element signature="e#113#167#0" expanded="true" />
               </folding>
@@ -47,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="389">
@@ -87,8 +87,8 @@
         <option value="$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" />
         <option value="$PROJECT_DIR$/flask_ocr/app.py" />
-        <option value="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
+        <option value="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
       </list>
     </option>
   </component>
@@ -694,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472672971337</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixed typo for resolution">
+      <created>1472673523200</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1472673523200</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -746,7 +753,8 @@
     <MESSAGE value="fixed reverse cameras, contours, and file extensions&#10;" />
     <MESSAGE value="added error detection features" />
     <MESSAGE value="added error detection features for API" />
-    <option name="LAST_COMMIT_MESSAGE" value="added error detection features for API" />
+    <MESSAGE value="fixed typo for resolution" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typo for resolution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1013,22 +1021,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="114" column="49" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
-          <folding>
-            <element signature="e#113#167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
           <folding>
             <element signature="e#171#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+          <folding>
+            <element signature="e#113#167#0" expanded="true" />
           </folding>
         </state>
       </provider>

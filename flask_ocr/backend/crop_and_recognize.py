@@ -101,15 +101,15 @@ def main(pictype, base):
     #     sys.exit(1)
 
     if str(base[-4:]).lower() != '.jpg':
-        return -99991
+        return -9999
     im = Image.open(base)
     width, height = im.size
     widths = [3264, 1920, 3776]
     heights = [2448, 1080, 2124]
     if (width not in widths) or (height not in heights):  # If the image is not from one of the cameras
-        return -99992
+        return -9999
     elif (widths.index(width) != heights.index(height)):  # if its not the right w x h combination
-        return -99993
+        return -9999
     try:
         if pictype == 3:
             temp = run_c3(base, 'backend/data/data_files/camera_3/')
@@ -121,7 +121,7 @@ def main(pictype, base):
             temp = run_c1(base, 'backend/data/data_files/camera_1/')
             return int(temp)
     except:
-        return -9994
+        return -999
 
 # crop.crop_image('/home/andy/Downloads/BoneH_2015-08-27_16-03-05_7659.JPG', "digits", 435, 0, 70, 30)  # crops digits
 
