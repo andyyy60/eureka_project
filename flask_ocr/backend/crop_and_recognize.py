@@ -1,5 +1,6 @@
 ''''Author: Andy Rosales Elias, EUREKA! 2016, Univeristy of California, Santa Barbara | andy00@umail.ucsb.edu'''
 import crop, ocr_contour, os, time, cv2, argparse, sys
+from PIL import Image
 
 def run_c2(image, training_path):
     '''reads temperature of images in a directory'''
@@ -99,16 +100,28 @@ def main(pictype, base):
     #     print 'pictype must be 1,2, or 3'
     #     sys.exit(1)
 
-    if pictype == 3:
-        temp = run_c3(base, 'backend/data/data_files/camera_3/')
-        return int(temp)
-    if pictype == 2:
-        temp = run_c2(base, 'backend/data/data_files/camera_2/')
-        return int(temp)
-    if pictype == 1:
-        temp = run_c1(base, 'backend/data/data_files/camera_1/')
-        return int(temp)
-
+    if str(base[-4:]).lower() != '.jpg':
+        return -99991
+    im = Image.open(base)
+    width, height = im.size
+    widths = [3264, 1920, 3776]
+    heights = [2448, 1080, 2124]
+    if (width not in widths) or (height not in heights):  # If the image is not from one of the cameras
+        return -99992
+    elif (widths.index(width) != heights.index(height)):  # if its not the right w x h combination
+        return -99993
+    try:
+        if pictype == 3:
+            temp = run_c3(base, 'backend/data/data_files/camera_3/')
+            return int(temp)
+        if pictype == 2:
+            temp = run_c2(base, 'backend/data/data_files/camera_2/')
+            return int(temp)
+        if pictype == 1:
+            temp = run_c1(base, 'backend/data/data_files/camera_1/')
+            return int(temp)
+    except:
+        return -9994
 
 # crop.crop_image('/home/andy/Downloads/BoneH_2015-08-27_16-03-05_7659.JPG', "digits", 435, 0, 70, 30)  # crops digits
 

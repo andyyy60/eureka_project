@@ -27,14 +27,9 @@ def upload_file():
     f = request.files['files']
     filename = request.form['filename']
     pictype = request.form['pictype']
-    if request.method == 'POST' and allowed_file(f.filename):
+    if request.method == 'POST':
         f.save(filename)
-    elif not allowed_file(f.filename):
-        return "only .jpg extensions accepted"
-    try:
-        output = crop_and_recognize.main(int(pictype), filename)
-    except:
-        return "Please try with another camera digit (1-3)\n"
+    output = crop_and_recognize.main(int(pictype), filename)
     os.remove(filename)
     return jsonify({'temperature': output})
 
