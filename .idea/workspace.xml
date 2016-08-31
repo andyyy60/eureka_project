@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="added error detection features">
+    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/app.py" afterPath="$PROJECT_DIR$/flask_ocr/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" afterPath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
     </list>
     <ignored path="ocr_knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="329">
               <caret line="114" column="49" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
               <folding>
                 <element signature="e#113#167#0" expanded="true" />
@@ -48,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="126" column="43" selection-start-line="105" selection-start-column="4" selection-end-line="126" selection-end-column="43" />
+            <state relative-caret-position="389">
+              <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
               <folding>
                 <element signature="e#171#225#0" expanded="true" />
               </folding>
@@ -87,9 +86,9 @@
         <option value="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
         <option value="$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
         <option value="$PROJECT_DIR$/flask_ocr/app.py" />
         <option value="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
       </list>
     </option>
   </component>
@@ -159,6 +158,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="initial_tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initial_tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472586938936</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added error detection features for API">
+      <created>1472672971337</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1472672971337</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -721,7 +745,8 @@
     <MESSAGE value="data allocation fix" />
     <MESSAGE value="fixed reverse cameras, contours, and file extensions&#10;" />
     <MESSAGE value="added error detection features" />
-    <option name="LAST_COMMIT_MESSAGE" value="added error detection features" />
+    <MESSAGE value="added error detection features for API" />
+    <option name="LAST_COMMIT_MESSAGE" value="added error detection features for API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -980,16 +1005,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="126" column="43" selection-start-line="105" selection-start-column="4" selection-end-line="126" selection-end-column="43" />
-          <folding>
-            <element signature="e#171#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flask_ocr/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -1000,10 +1015,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="329">
           <caret line="114" column="49" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
           <folding>
             <element signature="e#113#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
+          <folding>
+            <element signature="e#171#225#0" expanded="true" />
           </folding>
         </state>
       </provider>

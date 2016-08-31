@@ -108,7 +108,7 @@ def main():
     im = Image.open(args.base)
     width, height = im.size
     widths = [3264,1920,3776]
-    heights = [2248,1080,2124]
+    heights = [2448,1080,2124]
     if (width not in widths) or (height not in heights): #If the image is not from one of the cameras
         return "Temp is: {0}".format(-9999)
     elif (widths.index(width) != heights.index(height)): #if its not the right w x h combination
