@@ -121,7 +121,7 @@ def main(pictype, base):
             temp = run_c1(base, 'backend/data/data_files/camera_1/')
             return int(temp)
     except:
-        return -999
+        return -9999
 
 # crop.crop_image('/home/andy/Downloads/BoneH_2015-08-27_16-03-05_7659.JPG', "digits", 435, 0, 70, 30)  # crops digits
 
