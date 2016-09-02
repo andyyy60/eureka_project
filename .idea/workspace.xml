@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="error value update">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg/cropped_neg.png" afterPath="$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png/cropped_neg.png" />
+    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="fixed training data for camera 1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/blueschist_errpictype2_0550.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/figcreek176.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/lisque030.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/main042.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/vulture287.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill0081.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill14_2327.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill15-0495.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill15.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill16_div0_0284.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill16_works_0761.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/ocrtest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ocr_knn.iml" afterPath="$PROJECT_DIR$/.idea/ocr_knn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalresponses.data" afterPath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalresponses.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data" afterPath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalresponses.data" afterPath="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalresponses.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalsamples.data" afterPath="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalsamples.data" />
     </list>
     <ignored path="ocr_knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +38,11 @@
     <SUITE FILE_PATH="coverage/ocr_knn$crop.coverage" NAME="crop Coverage Results" MODIFIED="1472684659033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$crop__1_.coverage" NAME="crop (1) Coverage Results" MODIFIED="1472507894541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr/backend" />
     <SUITE FILE_PATH="coverage/ocr_knn$crop_and_recognize__1_.coverage" NAME="crop_and_recognize (1) Coverage Results" MODIFIED="1472679436818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$exif_extractor.coverage" NAME="exif_extractor Coverage Results" MODIFIED="1472799082770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$stitch.coverage" NAME="stitch Coverage Results" MODIFIED="1472684620809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$training_contours.coverage" NAME="training_contours Coverage Results" MODIFIED="1472684686949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$ocr_contour.coverage" NAME="ocr_contour Coverage Results" MODIFIED="1472508718901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr/backend" />
-    <SUITE FILE_PATH="coverage/ocr_knn$app.coverage" NAME="app Coverage Results" MODIFIED="1472510094788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr" />
+    <SUITE FILE_PATH="coverage/ocr_knn$app.coverage" NAME="app Coverage Results" MODIFIED="1472801122316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -39,14 +53,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="crop.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
+      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="-1305">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#610#714#0" expanded="false" />
+                <element signature="e#113#167#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crop.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_ocr/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exif_extractor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,55 +108,18 @@
       <file leaf-file-name="ocr_contour.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="584">
+              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="127" column="73" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="training_contours.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/training_contours.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generalsamples.data" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalsamples.data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="h_stitch_c2.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/h_stitch_c2.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="132" column="43" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
+            <state relative-caret-position="150">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#171#225#0" expanded="true" />
               </folding>
@@ -110,31 +127,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stitch.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
+      <file leaf-file-name="bonehole0609.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="no_space_stitch.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/no_space_stitch.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="9.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg/9.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="runocrtest.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,16 +173,18 @@
         <option value="$PROJECT_DIR$/initial_tasks/task3/training_contours.py" />
         <option value="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_3/generalresponses.data" />
         <option value="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_3/generalsamples.data" />
-        <option value="$PROJECT_DIR$/flask_ocr/backend/crop.py" />
         <option value="$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py" />
         <option value="$PROJECT_DIR$/flask_ocr/app.py" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/ocrtest.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/stitch.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/ocrtest.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
+        <option value="$PROJECT_DIR$/flask_ocr/backend/crop.py" />
         <option value="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -167,9 +196,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -196,6 +225,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,71 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camera_1" />
+              <option name="myItemId" value="flask_ocr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,6 +301,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="flask_ocr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,69 +401,49 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="camera_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Box" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/exif/pyexiftool" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="prop_add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/initial_tasks/task3" />
       <recent name="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1" />
-      <recent name="$PROJECT_DIR$/initial_tasks/task3" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/old" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/train_digits3_jpg" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.training_contours">
-    <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_ocr" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ocr_knn" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_ocr/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="crop_and_recognize (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/initial_tasks/task3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ocr_knn" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.app">
     <configuration default="false" name="stitch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -544,6 +494,42 @@
       <module name="ocr_knn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/initial_tasks/task3/training_contours.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="exif_extractor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/initial_tasks/task3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ocr_knn" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_ocr" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ocr_knn" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_ocr/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -757,19 +743,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.app" />
-      <item index="1" class="java.lang.String" itemvalue="Python.crop_and_recognize (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.stitch" />
-      <item index="3" class="java.lang.String" itemvalue="Python.crop" />
-      <item index="4" class="java.lang.String" itemvalue="Python.training_contours" />
+      <item index="0" class="java.lang.String" itemvalue="Python.stitch" />
+      <item index="1" class="java.lang.String" itemvalue="Python.crop" />
+      <item index="2" class="java.lang.String" itemvalue="Python.training_contours" />
+      <item index="3" class="java.lang.String" itemvalue="Python.exif_extractor" />
+      <item index="4" class="java.lang.String" itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.training_contours" />
-        <item index="1" class="java.lang.String" itemvalue="Python.crop" />
-        <item index="2" class="java.lang.String" itemvalue="Python.stitch" />
-        <item index="3" class="java.lang.String" itemvalue="Python.crop_and_recognize (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.app" />
+        <item index="0" class="java.lang.String" itemvalue="Python.app" />
+        <item index="1" class="java.lang.String" itemvalue="Python.exif_extractor" />
+        <item index="2" class="java.lang.String" itemvalue="Python.training_contours" />
+        <item index="3" class="java.lang.String" itemvalue="Python.crop" />
+        <item index="4" class="java.lang.String" itemvalue="Python.stitch" />
       </list>
     </recent_temporary>
   </component>
@@ -941,17 +927,46 @@
       <option name="project" value="LOCAL" />
       <updated>1472684838467</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fixed training data for camera 1">
+      <created>1472684946152</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1472684946152</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fixed training data for camera 1">
+      <created>1472756820999</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1472756820999</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated edge cases for api and command line version">
+      <created>1472802189397</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1472802189397</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updated command line version">
+      <created>1472802226455</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1472802226455</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22056384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23161969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.50193477" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -964,7 +979,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -996,61 +1010,16 @@
     <MESSAGE value="fixed typo for resolution" />
     <MESSAGE value="error value update" />
     <MESSAGE value="updated check error handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated check error handler" />
+    <MESSAGE value="fixed training data for camera 1" />
+    <MESSAGE value="updated edge cases for api and command line version" />
+    <MESSAGE value="updated command line version" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated command line version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/temp/1.jpg" />
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/test.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/horizontal_stitch.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png/9.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png/negative.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/old/training_experiment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg/7.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/old/ocr_experiment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/digits.jpg" />
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/F_c2.jpg" />
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits3_jpg/6.jpg" />
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png/2.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1075,13 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flask_ocr/email_check.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1101,7 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,9 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#53#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,70 +1077,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="44" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#20#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/asdasdasdas1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/asdasdasdas1.jpg" />
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.out" />
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/old/ocr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="37" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/digits.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/digits.jpg" />
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg/8.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1218,9 +1125,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/h_stitch.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/h_stitch.jpg" />
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalsamples.data">
@@ -1239,54 +1171,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
+    <entry file="file://$USER_HOME$/exif/pyexiftool/exiftool.py" />
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/lisque030.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/main042.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/windmill15.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/blueschist_errpictype2_0550.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/windmill15-0495.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#610#714#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="201">
+          <caret line="1326" column="0" selection-start-line="1326" selection-start-column="0" selection-end-line="1326" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/windmill14_2327.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="132" column="43" selection-start-line="132" selection-start-column="43" selection-end-line="132" selection-end-column="43" />
+        <state relative-caret-position="150">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="e#171#225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data">
+    <entry file="file://$PROJECT_DIR$/flask_ocr/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="389">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="105">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="127" column="73" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
+        <state relative-caret-position="-1305">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#113#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding />
         </state>
       </provider>
