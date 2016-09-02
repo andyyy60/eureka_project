@@ -6,7 +6,7 @@ def crop_image(input_image, output_image, start_x, start_y, width, height):
     input_img = Image.open(input_image)
     box = (start_x, start_y, start_x + width, start_y + height)
     output_img = input_img.crop(box)
-    output_img.save(output_image +".jpg")
+    output_img.save(output_image)
 
 
 def invert(image):
