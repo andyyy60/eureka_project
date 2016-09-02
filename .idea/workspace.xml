@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="fixed training data for camera 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/blueschist_errpictype2_0550.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/figcreek176.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/lisque030.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/main042.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/vulture287.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill0081.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill14_2327.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill15-0495.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill15.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill16_div0_0284.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/windmill16_works_0761.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/ocrtest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ocr_knn.iml" afterPath="$PROJECT_DIR$/.idea/ocr_knn.iml" />
+    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ocr_knn.iws" />
@@ -955,7 +937,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472802226455</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="test cases #1 (all passed)">
+      <created>1472802242931</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1472802242931</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1013,7 +1002,8 @@
     <MESSAGE value="fixed training data for camera 1" />
     <MESSAGE value="updated edge cases for api and command line version" />
     <MESSAGE value="updated command line version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated command line version" />
+    <MESSAGE value="test cases #1 (all passed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="test cases #1 (all passed)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
