@@ -1,6 +1,7 @@
 ''''Author: Andy Rosales Elias, EUREKA! 2016, Univeristy of California, Santa Barbara | andy00@umail.ucsb.edu'''
 #TODO: Put data sets in different folders for each camera
 import crop, ocr_contour, os, time, cv2, argparse, sys
+import pyexifinfo as exif
 from PIL import Image
 
 def check(base):
@@ -8,17 +9,36 @@ def check(base):
     width, height = im.size
     widths = [3264,1920,3776]
     heights = [2448,1080,2124]
+    exif_json = exif.get_json(base)
+    try:
+        temp = exif_json[0]['MakerNotes:AmbientTemperatureFahrenheit']
+        return [int(temp[:-2]), [width, height], exif_json]
+    except:
+        pass
     if (width not in widths) or (height not in heights): #If the image is not from one of the cameras
-        return "Temp is: {0}".format(-9999)
+        return ["Temp is: {0}".format(-9999), [width, height], exif_json]
     elif (widths.index(width) != heights.index(height)): #if its not the right w x h combination
-        return "Temp is: {0}".format(-9999)
-    return None
+        return ["Temp is: {0}".format(-9999), [width, height], exif_json]
+    try:
+        model = exif_json[0]['EXIF:Model']
+        if model == "SG565FV-8M": #HCO ScoutGuard (no temp)
+            return ["Temp is: {0}".format(-9999), [width, height], exif_json]
+    except:
+        pass
+    return [None, [width, height], exif_json]
 
 def run_c2(image, training_path):
     '''reads temperature of images in a directory'''
-    valid = check(image)
+    info = check(image)
+    valid = check(image)[0]
     if valid != None:
         return valid
+    width, height = info[1][0], info[1][1]
+    exif_json = info[2]
+    valid_heights = [3776, 1920, 2048] #pictype 3 heights
+    valid_widths = [2124, 1080, 1536] #pictype 3 widths
+    if width not in valid_widths or height not in valid_heights:
+        return "Temp is: {0}".format(-9999)
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
     crop.crop_image(image, "temp/digits.jpg", 1710, 0, 115, 30) #crops digits
@@ -34,10 +54,16 @@ def run_c2(image, training_path):
 
 def run_c1(image, training_path):
     '''reads temperature of images in a directory. CAMERA 1 ONLY'''
-    valid = check(image)
+    info = check(image)
+    valid = info[0]
     if valid != None:
         return valid
-
+    width, height = info[1][0], info[1][1]
+    exif_json = info[2]
+    valid_heights = [2448] #pictype 3 heights
+    valid_widths = [3264] #pictype 3 widths
+    if width not in valid_widths or height not in valid_heights:
+        return "Temp is: {0}".format(-9999)
     if not os.path.exists(os.getcwd() + '/temp/'):  # if temp folder doesnt exis, create one
         os.makedirs(os.getcwd() + '/temp/')
     crop.crop_image(image,'temp/digits.jpg',  800, 2350, 100, 95)
@@ -78,10 +104,16 @@ def run_c1(image, training_path):
 def run_c3(image, training_path):
     """reads temperature for a single image"""
     #FOR CAMERA 3 ONLY
-    valid = check(image)
+    info = check(image)
+    valid = info[0]
     if valid != None:
         return valid
-
+    width, height = info[1][0], info[1][1]
+    exif_json = info[2]
+    valid_heights = [2124] #pictype 3 heights
+    valid_widths = [3776] #pictype 3 widths
+    if width not in valid_widths or height not in valid_heights:
+        return "Temp is: {0}".format(-9999)
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
     crop.crop_image(image, "temp/digits.jpg", 435, 0, 70, 30) #crops digits
