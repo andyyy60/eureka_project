@@ -16,10 +16,10 @@ def invert(image):
 
 
 
-
+# invert("h_stitch.jpg")
 
                                             ##CAMERA 3##
-#crop_image(os.getcwd() + "/sample_images/BoneH_2015-12-08_06_10_04_7013.JPG", "output", 425, 0, 55, 30)
+# crop_image(os.getcwd() + "/testimages/windmill14_2327.JPG", "output.jpg", 770+215, 2365, 60, 55)
 
 
                                             ##CAMERA 1##
