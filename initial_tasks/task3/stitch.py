@@ -37,7 +37,7 @@ def stitch_vertically(image_list):
 
     new_im.save('v_stitch.png')
 
-# list = ["/home/andy/ocr_knn/initial_tasks/task3/data/train_digits3_jpg/"+file for file in os.listdir('/home/andy/ocr_knn/initial_tasks/task3/data/train_digits3_jpg')]
+# list = ["/home/andy/ocr_knn/initial_tasks/task3/data/train_digits2_jpg/"+file for file in os.listdir('/home/andy/ocr_knn/initial_tasks/task3/data/train_digits2_jpg')]
 #
 # list.sort()
 #

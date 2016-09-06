@@ -4,6 +4,11 @@ import crop, ocr_contour, os, time, cv2, argparse, sys
 import pyexifinfo as exif
 from PIL import Image
 
+def c_to_f(celsius):
+    """returns fahrenheit temperature"""
+    farenheit = 9.0 / 5.0 * celsius + 32
+    return farenheit
+
 def check(base):
     im = Image.open(base)
     width, height = im.size
@@ -66,36 +71,20 @@ def run_c1(image, training_path):
         return "Temp is: {0}".format(-9999)
     if not os.path.exists(os.getcwd() + '/temp/'):  # if temp folder doesnt exis, create one
         os.makedirs(os.getcwd() + '/temp/')
-    crop.crop_image(image,'temp/digits.jpg',  800, 2350, 100, 95)
+    crop.crop_image(image,'temp/digits.jpg',  790, 2355, 375, 70)
     crop.invert(os.getcwd() + '/temp/digits.jpg')
-    digits = len(ocr_contour.recognize(os.getcwd() + '/temp/digits.jpg', training_path))
+    info = ocr_contour.recognize(os.getcwd() + '/temp/digits.jpg', training_path, True)
+    temp = []
+    for item in info:
+        if item[0] == '45':
+            x1,y1 = item[1][0], item[1][1]
+    for item in info:
+        if item[1][0] < x1:
+            temp.append((item[0], item[1][0]))
+    final = sorted(temp, key = lambda x: x[1])
     temperature = ''
-    if digits == 1:  # crop rightmost digit
-        crop.crop_image(image, "temp/1.jpg", 795 + 35, 2350 + 15, 35, 55)
-        crop.invert(os.getcwd() + '/temp/1.jpg')
-        temperature = ocr_contour.recognize(os.getcwd() + '/temp/1.jpg', training_path)
-        os.remove(os.getcwd() + '/temp/1.jpg')  # clean up temp dir
-    if digits == 2:#If there's two digits, crop them to get them in order
-        crop.crop_image(image, "temp/1.jpg", 795 + 35, 2350 + 15, 35, 55)
-        crop.crop_image(image, "temp/2.jpg", 795, 2350 + 15, 38, 55)
-        crop.invert(os.getcwd() + '/temp/1.jpg')
-        crop.invert(os.getcwd() + '/temp/2.jpg')
-        right = ocr_contour.recognize(os.getcwd() + '/temp/1.jpg', training_path)
-        left = ocr_contour.recognize(os.getcwd() + '/temp/2.jpg', training_path)
-        temperature = left[0] + right[0]
-        os.remove(os.getcwd() + '/temp/1.jpg')  # clean up temp dir
-        os.remove(os.getcwd() + '/temp/2.jpg')  # clean up temp dir
-    elif digits == 3:#Edge case, crop 3 numbers and ignore any other symbols
-        crop.crop_image(image, "temp/1.jpg", 795 + 35, 2350 + 15, 35, 55)
-        crop.crop_image(image, "temp/2.jpg", 795, 2350 + 15, 38, 55)
-        crop.crop_image(image, "temp/3.jpg", 800+64, 2365, 100-57, 55)
-        crop.invert(os.getcwd() + '/temp/1.jpg')
-        crop.invert(os.getcwd() + '/temp/2.jpg')
-        crop.invert(os.getcwd() + '/temp/3.jpg')
-        right = ocr_contour.recognize(os.getcwd() + '/temp/1.jpg', training_path)
-        left = ocr_contour.recognize(os.getcwd() + '/temp/2.jpg', training_path)
-        extra = ocr_contour.recognize(os.getcwd() + '/temp/3.jpg', training_path)
-        temperature = left[0]+extra[0] + right[0]
+    for i in final:
+        temperature += i[0]
     try:
         return int(temperature)
     except:

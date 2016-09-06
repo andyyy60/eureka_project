@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" line="38" mnemonic="0" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="new cam 1 data (C included)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/crop.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/ocrtest.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/ocrtest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh" afterPath="$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/stitch.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/stitch.py" />
     </list>
     <ignored path="ocr_knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,14 +23,14 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ocr_knn$crop_and_recognize.coverage" NAME="crop_and_recognize Coverage Results" MODIFIED="1472861889014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
-    <SUITE FILE_PATH="coverage/ocr_knn$crop.coverage" NAME="crop Coverage Results" MODIFIED="1472861301735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$crop_and_recognize.coverage" NAME="crop_and_recognize Coverage Results" MODIFIED="1473199842424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$crop.coverage" NAME="crop Coverage Results" MODIFIED="1473115350203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$crop__1_.coverage" NAME="crop (1) Coverage Results" MODIFIED="1472507894541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr/backend" />
     <SUITE FILE_PATH="coverage/ocr_knn$crop_and_recognize__1_.coverage" NAME="crop_and_recognize (1) Coverage Results" MODIFIED="1472679436818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$exif_extractor.coverage" NAME="exif_extractor Coverage Results" MODIFIED="1472857500180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
-    <SUITE FILE_PATH="coverage/ocr_knn$stitch.coverage" NAME="stitch Coverage Results" MODIFIED="1472859881109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
-    <SUITE FILE_PATH="coverage/ocr_knn$training_contours.coverage" NAME="training_contours Coverage Results" MODIFIED="1472861594284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
-    <SUITE FILE_PATH="coverage/ocr_knn$ocr_contour.coverage" NAME="ocr_contour Coverage Results" MODIFIED="1472861937909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$stitch.coverage" NAME="stitch Coverage Results" MODIFIED="1473112408975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$training_contours.coverage" NAME="training_contours Coverage Results" MODIFIED="1473113393756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$ocr_contour.coverage" NAME="ocr_contour Coverage Results" MODIFIED="1473198544151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$app.coverage" NAME="app Coverage Results" MODIFIED="1472801122316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -39,35 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bonetrough1878.JPG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exif_extractor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="digits.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/digits.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-514">
-              <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+            <state relative-caret-position="-330">
+              <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
               <folding>
                 <element signature="e#171#225#0" expanded="true" />
               </folding>
@@ -75,11 +54,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ocr_contour.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="windmill14.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/windmill14.JPG">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocr_contour.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
+            <state relative-caret-position="355">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bonehole0609.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generalsamples.data" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalsamples.data">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,9 +91,11 @@
       <file leaf-file-name="crop.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="255">
               <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1473200301750" expanded="false" signature="0:31" ph="import ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,38 +103,18 @@
       <file leaf-file-name="training_contours.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/training_contours.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="-120">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stitch.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stitch.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="2" selection-end-line="43" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runocrtest.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ocrtest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+            <state relative-caret-position="401">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,11 +146,11 @@
         <option value="$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/ocrtest.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/stitch.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/training_contours.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/training_contours.py" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/stitch.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
       </list>
     </option>
   </component>
@@ -177,9 +162,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -274,28 +259,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testimages1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="testimages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -363,6 +326,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initial_tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train_digits_png" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initial_tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train_digits2_jpg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,6 +636,9 @@
     <property name="prop_add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1" />
       <recent name="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1" />
@@ -628,11 +646,8 @@
       <recent name="$PROJECT_DIR$/initial_tasks/task3" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/old" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.ocr_contour">
+  <component name="RunManager" selected="Python.crop_and_recognize">
     <configuration default="false" name="ocr_contour" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -940,10 +955,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ocr_contour" />
-        <item index="1" class="java.lang.String" itemvalue="Python.crop_and_recognize" />
-        <item index="2" class="java.lang.String" itemvalue="Python.training_contours" />
-        <item index="3" class="java.lang.String" itemvalue="Python.crop" />
+        <item index="0" class="java.lang.String" itemvalue="Python.crop_and_recognize" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ocr_contour" />
+        <item index="2" class="java.lang.String" itemvalue="Python.crop" />
+        <item index="3" class="java.lang.String" itemvalue="Python.training_contours" />
         <item index="4" class="java.lang.String" itemvalue="Python.stitch" />
       </list>
     </recent_temporary>
@@ -1186,14 +1201,21 @@
       <option name="project" value="LOCAL" />
       <updated>1472863832641</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fixed training data for camera 1">
+      <created>1473200324497</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1473200324497</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22830293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23106688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.50193477" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1242,7 +1264,6 @@
     <MESSAGE value="fixed typo for resolution" />
     <MESSAGE value="error value update" />
     <MESSAGE value="updated check error handler" />
-    <MESSAGE value="fixed training data for camera 1" />
     <MESSAGE value="updated edge cases for api and command line version" />
     <MESSAGE value="updated command line version" />
     <MESSAGE value="test cases #1 (all passed)" />
@@ -1250,7 +1271,8 @@
     <MESSAGE value="new cam 1 data (C included)" />
     <MESSAGE value="coordinates for cam 1" />
     <MESSAGE value="exif extractor using Phil's exiftool pywrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="exif extractor using Phil's exiftool pywrapper" />
+    <MESSAGE value="fixed training data for camera 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed training data for camera 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1321,7 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1337,7 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,39 +1372,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1891">
           <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/blueschist_errpictype2_0550.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1425,17 +1422,62 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/windmill14.JPG">
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalresponses.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/train_result.png" />
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalresponses.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalresponses.data">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/old/ocr.py">
@@ -1446,15 +1488,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/train_result.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalresponses.data">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/training_contours.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1477,86 +1522,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/digits.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/temp/digits.jpg">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/windmill14.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="255">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1473200301750" expanded="false" signature="0:31" ph="import ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        <state relative-caret-position="-330">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
           <folding>
             <element signature="e#171#225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/training_contours.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="355">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="2" selection-end-line="43" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
+        <state relative-caret-position="401">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
