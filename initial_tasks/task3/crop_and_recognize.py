@@ -166,7 +166,6 @@ def loop(type, path, debug = False):
             temp = run_c1(path + image, 'data/data_files/camera_1/')
             print "Temp is: {0}".format(temp)
 
-loop(4, "/home/andy/training/new_cam/")
 
 def main():
     parser = argparse.ArgumentParser(description='OCR Recognition tool for Sedgwick Reserve photos')
@@ -199,7 +198,7 @@ def main():
 
 
 
-# ######################################
-# if __name__ == "__main__":
-#     print main()
-# ######################################
+######################################
+if __name__ == "__main__":
+    print main()
+######################################
