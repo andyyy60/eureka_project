@@ -18,6 +18,9 @@ def invert(image):
 
 # invert("output.jpg")
 
+                                            ##CAMERA 4##
+# crop_image("/home/andy/training/new_cam/MFDC0070.JPG", "output.jpg", 825, 1445, 145, 70)
+
                                             ##CAMERA 3##
 # crop_image(os.getcwd() + "/testimages/windmill14_2327.JPG", "output.jpg", 790, 2355, 375, 70)
 

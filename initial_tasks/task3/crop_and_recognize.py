@@ -12,8 +12,8 @@ def c_to_f(celsius):
 def check(base):
     im = Image.open(base)
     width, height = im.size
-    widths = [3264,1920,3776]
-    heights = [2448,1080,2124]
+    widths = [3264,1920,3776, 2688]
+    heights = [2448,1080,2124, 1512]
     exif_json = exif.get_json(base)
     try:
         temp = exif_json[0]['MakerNotes:AmbientTemperatureFahrenheit']
@@ -109,8 +109,33 @@ def run_c3(image, training_path):
     temperature = ocr_contour.recognize('temp/digits.jpg', training_path) #recognize right digit
     os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
     temp = ''
-    for digit in temperature:
-        temp += digit
+    try:
+        return int(temp)
+    except:
+        return "Temp is: {0}".format(-9999)
+
+def run_c4(image, training_path):
+    """reads temperature for a single image"""
+    #FOR CAMERA 4 ONLY
+    info = check(image)
+    valid = info[0]
+    if valid != None:
+        return valid
+    width, height = info[1][0], info[1][1]
+    exif_json = info[2]
+    valid_heights = [1512] #pictype 4 heights
+    valid_widths = [2688] #pictype 4 widths
+    if width not in valid_widths or height not in valid_heights:
+        return "Temp is: {0}".format(-9999)
+    if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
+        os.makedirs(os.getcwd()+'/temp/')
+    crop.crop_image(image, "temp/digits.jpg",  825, 1445, 145, 70)
+    temperature = ocr_contour.recognize('temp/digits.jpg', training_path, True) #recognize right digit
+    final = sorted(temperature, key = lambda x: x[1][0])
+    os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
+    temp = ''
+    for digit in final:
+        temp += digit[0]
     try:
         return int(temp)
     except:
@@ -118,10 +143,10 @@ def run_c3(image, training_path):
 
 def loop(type, path, debug = False):
     """Select camera 1,2 or 3"""
-    if type == 3:
+    if type == 4:
         for image in os.listdir(path):
-            temp = run_c3(path+image, 'data/data_files/camera_3/')
-            print "Temp is: {0}".format(temp)
+            temp = run_c4(path+image, 'data/data_files/camera_1/')
+            print "Temp is: {0}".format(temp), image
     if type == 2:
         for image in os.listdir(path):
             temp = run_c2(path+image, 'data/data_files/camera_2/')
@@ -162,12 +187,15 @@ def main():
         if args.pictype == 1:
             temp = run_c1(args.base, 'data/data_files/camera_1/')
             return "Temp is: {0}".format(temp)
+        if args.pictype == 4:
+            temp = run_c4(args.base, 'data/data_files/camera_1/')
+            return "Temp is: {0}".format(temp)
     except:
         return "Temp is: {0}".format(-9999)
 
 
 
-######################################
-if __name__ == "__main__":
-    print main()
-######################################
+# ######################################
+# if __name__ == "__main__":
+#     print main()
+# ######################################
