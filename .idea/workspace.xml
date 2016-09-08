@@ -4,12 +4,29 @@
     <bookmark url="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" line="38" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="new cam 1 data (C included)">
+    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/lisque2014_029.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/upper_reserve16_1981.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages/vultureMFCD16.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/blueschist_errpictype2_0550.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/bonehole0609.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/bonetrough1878.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/figcreek14_2379.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/figcreek176.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/lisque030.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/main042.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/northeast1847.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/vulture287.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill0081.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill14.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill14_2327.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill15-0495.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill15.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill15_0091.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill16_div0_0284.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill16_works_0761.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/initial_tasks/task3/runocrtest_1.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/crop.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_tasks/task3/stitch.py" afterPath="$PROJECT_DIR$/initial_tasks/task3/stitch.py" />
     </list>
     <ignored path="ocr_knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,14 +40,14 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ocr_knn$crop_and_recognize.coverage" NAME="crop_and_recognize Coverage Results" MODIFIED="1473199842424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
-    <SUITE FILE_PATH="coverage/ocr_knn$crop.coverage" NAME="crop Coverage Results" MODIFIED="1473115350203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$crop_and_recognize.coverage" NAME="crop_and_recognize Coverage Results" MODIFIED="1473294244548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$crop.coverage" NAME="crop Coverage Results" MODIFIED="1473292758726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$crop__1_.coverage" NAME="crop (1) Coverage Results" MODIFIED="1472507894541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr/backend" />
     <SUITE FILE_PATH="coverage/ocr_knn$crop_and_recognize__1_.coverage" NAME="crop_and_recognize (1) Coverage Results" MODIFIED="1472679436818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$exif_extractor.coverage" NAME="exif_extractor Coverage Results" MODIFIED="1472857500180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$stitch.coverage" NAME="stitch Coverage Results" MODIFIED="1473112408975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$training_contours.coverage" NAME="training_contours Coverage Results" MODIFIED="1473113393756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
-    <SUITE FILE_PATH="coverage/ocr_knn$ocr_contour.coverage" NAME="ocr_contour Coverage Results" MODIFIED="1473198544151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
+    <SUITE FILE_PATH="coverage/ocr_knn$ocr_contour.coverage" NAME="ocr_contour Coverage Results" MODIFIED="1473293301316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/initial_tasks/task3" />
     <SUITE FILE_PATH="coverage/ocr_knn$app.coverage" NAME="app Coverage Results" MODIFIED="1472801122316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_ocr" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -42,15 +59,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ocr_contour.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crop.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+            <state relative-caret-position="2475">
+              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="e#171#225#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -61,62 +107,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ocr_contour.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
+      <file leaf-file-name="runocrtest.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="310">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bonehole0609.JPG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
+      <file leaf-file-name="runocrtest_1.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest_1.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="42" column="56" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bonetrough1878.JPG" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generalsamples.data" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalsamples.data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crop.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <marker date="1473200301750" expanded="false" signature="0:31" ph="import ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="training_contours.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/training_contours.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stitch.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -148,9 +162,11 @@
         <option value="$PROJECT_DIR$/initial_tasks/task3/exif_extractor.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/stitch.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/training_contours.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/runocrtest_1.sh" />
+        <option value="$PROJECT_DIR$/initial_tasks/data_cleaner.py" />
+        <option value="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py" />
         <option value="$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" />
-        <option value="$PROJECT_DIR$/initial_tasks/task3/crop.py" />
       </list>
     </option>
   </component>
@@ -281,7 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,15 +311,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
+              <option name="myItemId" value="flask_ocr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,11 +325,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
+              <option name="myItemId" value="flask_ocr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ocr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -339,37 +365,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
+              <option name="myItemId" value="flask_ocr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="train_digits_png" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -378,146 +378,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="train_digits2_jpg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camera_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initial_tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camera_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flask_ocr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flask_ocr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ocr_knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flask_ocr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -640,10 +500,10 @@
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/initial_tasks/task3" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1" />
       <recent name="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg" />
-      <recent name="$PROJECT_DIR$/initial_tasks/task3" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/old" />
     </key>
   </component>
@@ -1208,7 +1068,21 @@
       <option name="project" value="LOCAL" />
       <updated>1473200324497</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixed camera 1 &quot;list out of range&quot; bug">
+      <created>1473200353770</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1473200353770</updated>
+    </task>
+    <task id="LOCAL-00035" summary="added functionality for camera 4">
+      <created>1473294490875</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1473294490875</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1221,9 +1095,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.340625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34791666" sideWeight="0.49806523" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34791666" sideWeight="0.49806523" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1248,7 +1122,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="&quot;added better training data for coyotes&quot;" />
     <MESSAGE value="work for once omg" />
     <MESSAGE value="crop_ratio crops edges" />
     <MESSAGE value="updating training data" />
@@ -1272,40 +1145,15 @@
     <MESSAGE value="coordinates for cam 1" />
     <MESSAGE value="exif extractor using Phil's exiftool pywrapper" />
     <MESSAGE value="fixed training data for camera 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed training data for camera 1" />
+    <MESSAGE value="fixed camera 1 &quot;list out of range&quot; bug" />
+    <MESSAGE value="added functionality for camera 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality for camera 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flask_ocr/asdasdasdas1.jpg" />
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.out" />
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg/8.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits_png/cropped_neg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg/9.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/train_digits2_jpg/0.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/no_space_stitch.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/h_stitch_c2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1382,7 +1230,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/blueschist_errpictype2_0550.JPG">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages2/blueschist_errpictype2_0550.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1422,13 +1270,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalresponses.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/train_result.png" />
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalresponses.data">
       <provider selected="true" editor-type-id="text-editor">
@@ -1444,17 +1285,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages2/bonetrough1878.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocrtest.py">
@@ -1504,11 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/output.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/h_stitch.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1527,30 +1355,100 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages2/windmill14.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages2/bonehole0609.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/vulture287.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/windmill14.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonetrough1878.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/data_cleaner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalresponses.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/output.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/runocrtest_1.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding>
-            <marker date="1473200301750" expanded="false" signature="0:31" ph="import ..." />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        <state relative-caret-position="2475">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
             <element signature="e#171#225#0" expanded="true" />
           </folding>
@@ -1559,16 +1457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/stitch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="482">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
