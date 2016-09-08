@@ -130,8 +130,11 @@ def run_c4(image, training_path):
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
     crop.crop_image(image, "temp/digits.jpg",  825, 1445, 145, 70)
-    temperature = ocr_contour.recognize('temp/digits.jpg', training_path, True) #recognize right digit
-    final = sorted(temperature, key = lambda x: x[1][0])
+    temperature = ocr_contour.recognize('temp/digits.jpg', training_path, True) #recognize digits
+    # im = cv2.imread('temp/digits.jpg') ##debugging
+    # cv2.imshow('img', im) ##debugging
+    # cv2.waitKey(0) ##debugging
+    final = sorted(temperature, key = lambda x: x[1][0]) #sort from left to right
     os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
     temp = ''
     for digit in final:
@@ -163,6 +166,7 @@ def loop(type, path, debug = False):
             temp = run_c1(path + image, 'data/data_files/camera_1/')
             print "Temp is: {0}".format(temp)
 
+loop(4, "/home/andy/training/new_cam/")
 
 def main():
     parser = argparse.ArgumentParser(description='OCR Recognition tool for Sedgwick Reserve photos')
