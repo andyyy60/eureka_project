@@ -164,8 +164,6 @@ def loop(bg_folder,root, animal, output):
     for i in range(1, 6):
         main(bg_folder, root+"{}/{}_{}/".format(animal,animal,i),output)
 
-loop("/home/andy/images/empty/","/home/andy/PycharmProjects/animal_cropping/","coyote","/home/andy/images/test/")
-
 def DEMO_animal_placement(root, empty_background, animal):
     background = Image.open(empty_background)
     bg_w, bg_h = background.size
@@ -200,7 +198,7 @@ def DEMO_animal_placement(root, empty_background, animal):
 
         time.sleep(1)
 
-
-
-
-# DEMO_animal_placement("/home/andy/PycharmProjects/animal_cropping/", "/home/andy/images/master_training/empty/empty43.jpg", "coyote")
+#change these to work in your environment
+loop("/home/andy/images/empty/","/home/andy/PycharmProjects/animal_cropping/","coyote","/home/andy/images/coyote/")
+loop("/home/andy/images/empty/","/home/andy/PycharmProjects/animal_cropping/","bear","/home/andy/images/bear/")
+loop("/home/andy/images/empty/","/home/andy/PycharmProjects/animal_cropping/","deer","/home/andy/images/deer/")
