@@ -1,13 +1,11 @@
 ''''Author: Andy Rosales Elias, EUREKA! 2016, Univeristy of California, Santa Barbara | andy00@umail.ucsb.edu'''
 #TODO: Put data sets in different folders for each camera
-import crop, ocr_contour, os, time, cv2, argparse, sys
+import crop, ocr_contour, os, time, cv2, argparse, sys, random, string
 import pyexifinfo as exif
 from PIL import Image
 
-def c_to_f(celsius):
-    """returns fahrenheit temperature"""
-    farenheit = 9.0 / 5.0 * celsius + 32
-    return farenheit
+def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
+   return ''.join(random.choice(chars) for _ in range(size))
 
 def check(base):
     im = Image.open(base)
@@ -33,27 +31,37 @@ def check(base):
     return [None, [width, height], exif_json]
 
 def run_c2(image, training_path):
-    '''reads temperature of images in a directory'''
+    '''Reads temperature values from HC500/HC600 Hyperfire cameras
+        Writes any found mismatches on task3/mismatches/ in a .txt file
+        w/ a randomly generated filename'''
     info = check(image)
     valid = check(image)[0]
-    if valid != None:
-        return valid
     width, height = info[1][0], info[1][1]
-    exif_json = info[2]
-    valid_heights = [3776, 1920, 2048] #pictype 3 heights
-    valid_widths = [2124, 1080, 1536] #pictype 3 widths
+    valid_widths = [1920, 2048]  # pictype 2 heights
+    valid_heights = [1080, 1536]  # pictype 2 widths
     if width not in valid_widths or height not in valid_heights:
         return "Temp is: {0}".format(-9999)
-    if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
-        os.makedirs(os.getcwd()+'/temp/')
-    crop.crop_image(image, "temp/digits.jpg", 1710, 0, 115, 30) #crops digits
-    temperature = ocr_contour.recognize(os.getcwd()+'/temp/digits.jpg', training_path) #recognize right digit
-    os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
-    temp = ''
+    if not os.path.exists(os.getcwd() + '/temp/'):  # if temp folder doesnt exis, create one
+        os.makedirs(os.getcwd() + '/temp/')
+    if height == valid_heights[0] and width == valid_widths[0]: #1920x2040
+        crop.crop_image(image, "temp/digits.jpg", 1710, 0, 115, 30)  # crops digits
+    elif height == valid_heights[1] and width == valid_widths[1]: #2048x1536
+        crop.crop_image(image, "temp/digits.jpg", 1850, 0, 105, 30)
+    temperature = ocr_contour.recognize(os.getcwd() + '/temp/digits.jpg', training_path)  # recognize right digit
+    # os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
+    ocr_temp = ''
     for digit in temperature:
-        temp += digit
+        ocr_temp += digit
+    if valid != None:
+        exif_temp = int(valid)
+    ocr_temp = int(ocr_temp)
     try:
-        return int(temp)
+        if ocr_temp != exif_temp:
+            if not os.path.exists(os.getcwd() + '/mismatches/'):  # if temp folder doesnt exis, create one
+                os.makedirs(os.getcwd() + '/mismatches/')
+            f = open("mismatches/{0}.jpg".format(id_generator()), "w")
+            f.write("exif temp: {0}, ocr temp: {1}, filename: {2}".format(exif_temp,ocr_temp,image))
+        return int(ocr_temp)
     except:
         return "Temp is: {0}".format(-9999)
 
@@ -61,14 +69,14 @@ def run_c1(image, training_path):
     '''reads temperature of images in a directory. CAMERA 1 ONLY'''
     info = check(image)
     valid = info[0]
-    if valid != None:
-        return valid
     width, height = info[1][0], info[1][1]
     exif_json = info[2]
     valid_heights = [2448] #pictype 3 heights
     valid_widths = [3264] #pictype 3 widths
     if width not in valid_widths or height not in valid_heights:
         return "Temp is: {0}".format(-9999)
+    if valid != None:
+        return valid
     if not os.path.exists(os.getcwd() + '/temp/'):  # if temp folder doesnt exis, create one
         os.makedirs(os.getcwd() + '/temp/')
     crop.crop_image(image,'temp/digits.jpg',  790, 2355, 375, 70)
@@ -106,9 +114,11 @@ def run_c3(image, training_path):
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
     crop.crop_image(image, "temp/digits.jpg", 435, 0, 70, 30) #crops digits
-    temperature = ocr_contour.recognize('temp/digits.jpg', training_path) #recognize right digit
+    temperature = ocr_contour.recognize('temp/digits.jpg', training_path) #recognize digit
     os.remove(os.getcwd()+'/temp/digits.jpg') #clean up temp dir
     temp = ''
+    for i in temperature:
+        temp +=i
     try:
         return int(temp)
     except:

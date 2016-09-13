@@ -16,7 +16,7 @@ def invert(image):
 
 
 
-# invert("output.jpg")
+# invert("output.jpg"
 
                                             ##CAMERA 4##
 # crop_image("/home/andy/training/new_cam/MFDC0070.JPG", "output.jpg", 825, 1445, 145, 70)
@@ -36,7 +36,8 @@ def invert(image):
 #crop_image(os.getcwd()+"/sample_images/Main_2015-01-18_08_52_23_114.JPG","output", 1750, 0, 80, 30) -->  both digits
 #crop_image(os.getcwd() + "/sample_images/Main_2015-01-18_08_52_23_114.JPG", "output", 1755, 0, 38, 30) -->  left digit
 #crop_image(os.getcwd() + "/sample_images/Main_2015-01-18_08_52_23_114.JPG", "output", 1755 + 35, 0, 38, 30) --> right didit
-
+                                           ##CAMERA 2.5##
+crop_image("/home/andy/images/windmill16_div0_0284.JPG","output.jpg", 1850, 0, 105, 30)
 
 def crop_ratio(image, output):
     im = Image.open(image)
