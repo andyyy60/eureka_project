@@ -4,11 +4,38 @@
     <bookmark url="file://$PROJECT_DIR$/initial_tasks/task3/ocr_contour.py" line="38" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="Updated web service  backend files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flask_ocr/__init__.py" />
+    <list default="true" id="b9f0fae7-d2e6-4cea-90a6-6538e7046083" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/h_stitch_c2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/horizontal_stitch.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/info.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/no_space_stitch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/F.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits2_jpg/cropped_neg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/0.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/1.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/2.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/3.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/4.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/5.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/6.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/7.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/8.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/9.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/train_digits_png/negative.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" afterPath="$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py" afterPath="$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data" afterPath="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data" />
     </list>
     <ignored path="ocr_knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,13 +90,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="output.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/output.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,11 +112,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="download_and_classify.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Box/download_and_classify.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crop_and_recognize.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1005">
+            <state relative-caret-position="-871">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generalsamples.data" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,16 +158,6 @@
         <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages/bonehole0609.JPG">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crop_rec.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initial_tasks/task3/crop_rec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="58" selection-end-column="43" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -296,6 +328,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="initial_tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initial_tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="flask_ocr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -328,6 +408,122 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ocr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ocr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camera_3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ocr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camera_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ocr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camera_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_knn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Box" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -347,11 +543,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flask_ocr/backend/data/data_files" />
       <recent name="$PROJECT_DIR$/flask_ocr/backend/data" />
       <recent name="$PROJECT_DIR$/flask_ocr/backend" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3" />
       <recent name="$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1" />
-      <recent name="$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/flask_ocr/backend" />
@@ -954,7 +1150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473746745092</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Updated web service  backend files">
+      <created>1473746837501</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1473746837501</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1035,11 +1238,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages1/blueschist_errpictype2_0550.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/testimages1/bonetrough1878.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1123,13 +1321,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/train_result.png" />
     <entry file="file://$PROJECT_DIR$/initial_tasks/task3/data/data_files/camera_1/generalresponses.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1299,14 +1490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_ocr/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flask_ocr/backend/ocr_contour.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1315,10 +1498,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Box/download_and_classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flask_ocr/backend/crop_and_recognize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1005">
+        <state relative-caret-position="-871">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ocr/backend/data/data_files/camera_1/generalsamples.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
