@@ -18,13 +18,13 @@ def check(base):
     except:
         pass
     if (width not in widths) or (height not in heights): #If the image is not from one of the cameras
-        return ["Temp is: {0}".format(-9999), [width, height], exif_json]
+        return [int(-9999), [width, height], exif_json]
     elif (widths.index(width) != heights.index(height)): #if its not the right w x h combination
-        return ["Temp is: {0}".format(-9999), [width, height], exif_json]
+        return [int(-9999), [width, height], exif_json]
     try:
         model = exif_json[0]['EXIF:Model']
         if model == "SG565FV-8M": #HCO ScoutGuard (no temp)
-            return ["Temp is: {0}".format(-9999), [width, height], exif_json]
+            return [int(-9999), [width, height], exif_json]
     except:
         pass
     return [None, [width, height], exif_json]
@@ -39,7 +39,7 @@ def run_c2(image, training_path):
     valid_widths = [1920, 2048]  # pictype 2 heights
     valid_heights = [1080, 1536]  # pictype 2 widths
     if width not in valid_widths or height not in valid_heights:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
     if not os.path.exists(os.getcwd() + '/temp/'):  # if temp folder doesnt exis, create one
         os.makedirs(os.getcwd() + '/temp/')
     if height == valid_heights[0] and width == valid_widths[0]: #1920x2040
@@ -62,7 +62,7 @@ def run_c2(image, training_path):
             f.write("exif temp: {0}, ocr temp: {1}, filename: {2}".format(exif_temp,ocr_temp,image))
         return int(ocr_temp)
     except:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
 
 def run_c1(image, training_path):
     '''reads temperature of images in a directory. CAMERA 1 ONLY'''
@@ -73,7 +73,7 @@ def run_c1(image, training_path):
     valid_heights = [2448] #pictype 3 heights
     valid_widths = [3264] #pictype 3 widths
     if width not in valid_widths or height not in valid_heights:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
     if valid != None:
         return valid
     if not os.path.exists(os.getcwd() + '/temp/'):  # if temp folder doesnt exis, create one
@@ -95,7 +95,7 @@ def run_c1(image, training_path):
     try:
         return int(temperature)
     except:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
 
 def run_c3(image, training_path):
     """reads temperature for a single image"""
@@ -109,7 +109,7 @@ def run_c3(image, training_path):
     valid_heights = [2124] #pictype 3 heights
     valid_widths = [3776] #pictype 3 widths
     if width not in valid_widths or height not in valid_heights:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
     crop.crop_image(image, "temp/digits.jpg", 435, 0, 70, 30) #crops digits
@@ -121,7 +121,7 @@ def run_c3(image, training_path):
     try:
         return int(temp)
     except:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
 
 def run_c4(image, training_path):
     """reads temperature for a single image"""
@@ -135,7 +135,7 @@ def run_c4(image, training_path):
     valid_heights = [1512] #pictype 4 heights
     valid_widths = [2688] #pictype 4 widths
     if width not in valid_widths or height not in valid_heights:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
     if not os.path.exists(os.getcwd()+'/temp/'): #if temp folder doesnt exis, create one
         os.makedirs(os.getcwd()+'/temp/')
     crop.crop_image(image, "temp/digits.jpg",  825, 1445, 145, 70)
@@ -151,18 +151,18 @@ def run_c4(image, training_path):
     try:
         return int(temp)
     except:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
 
 def loop(type, path, debug = False):
     """Select camera 1,2 or 3"""
     if type == 4:
         for image in os.listdir(path):
             temp = run_c4(path+image, 'data/data_files/camera_1/')
-            print "Temp is: {0}".format(temp), image
+            print int(temp), image
     if type == 2:
         for image in os.listdir(path):
             temp = run_c2(path+image, 'data/data_files/camera_2/')
-            print "Temp is: {0}".format(temp)
+            print int(temp)
             if debug == True:
                 img = cv2.imread(path+image)
                 cv2.imshow(image, img)
@@ -173,37 +173,37 @@ def loop(type, path, debug = False):
     if type == 1:
         for image in os.listdir(path):
             temp = run_c1(path + image, 'data/data_files/camera_1/')
-            print "Temp is: {0}".format(temp)
+            print int(temp)
 
 
-def main():
-    parser = argparse.ArgumentParser(description='OCR Recognition tool for Sedgwick Reserve photos')
-    parser.add_argument('pictype', action='store', type=int, help='1,2,3')
-    parser.add_argument('base', action='store', help='JPEG image')
-    # optional arguments
-    # parser.add_argument('--blur','-b',action='store',default=False,type=bool,help='day threshold')
-    args = parser.parse_args()
-    if args.pictype < -1 and args.pictype > 3:
-        # 0 is hidden and used for testing
-        print 'pictype must be 1,2, or 3'
-        sys.exit(1)
-    if str(args.base[-4:]).lower() != '.jpg':
-        return "Temp is: {0}".format(-9999)
+def main(pictype, base):
+    # parser = argparse.ArgumentParser(description='OCR Recognition tool for Sedgwick Reserve photos')
+    # parser.add_argument('pictype', action='store', type=int, help='1,2,3')
+    # parser.add_argument('base', action='store', help='JPEG image')
+    # # optional arguments
+    # # parser.add_argument('--blur','-b',action='store',default=False,type=bool,help='day threshold')
+    # args = parser.parse_args()
+    # if args.pictype < -1 and args.pictype > 3:
+    #     # 0 is hidden and used for testing
+    #     print 'pictype must be 1,2, or 3'
+    #     sys.exit(1)
+    if str(base[-4:]).lower() != '.jpg':
+        return int(-9999)
     try:
-        if args.pictype == 3:
-            temp = run_c3(args.base, 'data/data_files/camera_3/')
-            return "Temp is: {0}".format(temp)
-        if args.pictype == 2:
-            temp = run_c2(args.base, 'data/data_files/camera_2/')
-            return "Temp is: {0}".format(temp)
-        if args.pictype == 1:
-            temp = run_c1(args.base, 'data/data_files/camera_1/')
-            return "Temp is: {0}".format(temp)
-        if args.pictype == 4:
-            temp = run_c4(args.base, 'data/data_files/camera_1/')
-            return "Temp is: {0}".format(temp)
+        if pictype == 3:
+            temp = run_c3(base, 'backend/data/data_files/camera_3/')
+            return int(temp)
+        if pictype == 2:
+            temp = run_c2(base, 'backend/data/data_files/camera_2/')
+            return int(temp)
+        if pictype == 1:
+            temp = run_c1(base, 'backend/data/data_files/camera_1/')
+            return int(temp)
+        if pictype == 4:
+            temp = run_c4(base, 'backend/data/data_files/camera_1/')
+            return int(temp)
     except:
-        return "Temp is: {0}".format(-9999)
+        return int(-9999)
 
 
 
