@@ -16,7 +16,7 @@
 
  curl -i -X POST -F files=@BoneT_2014-05-30_19-05-53_038.JPG --form "filename=temp.jpg" --form "pictype=1" http://169.231.235.107:5000/upload
 
-#####RESPONSE:
+####RESPONSE:
 
 {
   	"temperature": 64
